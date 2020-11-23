@@ -1,5 +1,15 @@
+//Init
+import React from "react";
+
+//Components
+import Nav from "../components/Nav";
+
 function Home() {
-	return <h1> Hello World </h1>;
+	return (
+		<React.Fragment>
+			<Nav />
+		</React.Fragment>
+	);
 }
 
 export default Home;

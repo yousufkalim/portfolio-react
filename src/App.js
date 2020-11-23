@@ -5,6 +5,10 @@ import { Switch, Route, Redirect } from "react-router-dom";
 //Pages
 import Home from "./pages/Home";
 
+//Styles
+import "./Style/App.css";
+import "./Style/Nav.css";
+
 //Component
 function App() {
 	return (
