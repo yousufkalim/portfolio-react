@@ -42,4 +42,11 @@ const about = {
 	),
 };
 
-export { header, about };
+//Work
+const work = {
+	title: "Why Work With ME",
+	tagline: "WEB . RESPONSIVE . UX/UI",
+	discripttion: `Because I’m giving you the lowest price compared to the market and giving you the professional neet and clean work, And also I’m giving you free support for one month and unlimited revisions, I also have full refund policy, So you still thinking? Come On..`,
+};
+
+export { header, about, work };
