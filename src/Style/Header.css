@@ -1,9 +1,11 @@
+/* Main Container */
 header {
 	width: 100%;
 	height: 100vh;
 	position: relative;
 }
 
+/* Header Container */
 .header-container {
 	background-image: url("../images/Home/man-full.jpg");
 	width: 100%;

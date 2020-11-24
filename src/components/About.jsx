@@ -1,3 +1,4 @@
+//Init
 import React from "react";
 
 //Style

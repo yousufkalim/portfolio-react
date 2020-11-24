@@ -4,12 +4,13 @@ import React from "react";
 //data
 import { header, about, work } from "../data/home";
 
-//Components
+//Importing Components
 import Nav from "../components/Nav";
 import Header from "../components/Header";
 import About from "../components/About";
 import Work from "../components/Work";
 
+//Component
 function Home() {
 	return (
 		<React.Fragment>
@@ -31,4 +32,5 @@ function Home() {
 	);
 }
 
+//Export
 export default Home;

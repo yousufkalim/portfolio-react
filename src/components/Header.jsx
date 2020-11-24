@@ -1,8 +1,10 @@
+//Init
 import React from "react";
 
 //Style
 import "../Style/Header.css";
 
+//Component
 function Header({ heading, title, qoute }) {
 	return (
 		<header>
@@ -21,4 +23,5 @@ function Header({ heading, title, qoute }) {
 	);
 }
 
+//Component
 export default Header;

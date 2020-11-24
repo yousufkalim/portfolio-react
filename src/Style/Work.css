@@ -1,8 +1,19 @@
 /* Main Container */
 .work {
-	padding: 160px 0 200px 0;
+	padding: 86px 0 260px 0;
 	background-color: #191c23;
 	position: relative;
+}
+
+.work::before {
+	content: "";
+	width: 100%;
+	height: 175px;
+	position: absolute;
+	top: -100px;
+	left: 0;
+	background: #191c23;
+	transform: skewY(3.5deg);
 }
 
 /* Work Section Headings and Description*/

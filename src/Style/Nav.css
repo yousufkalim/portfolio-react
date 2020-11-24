@@ -14,6 +14,7 @@ nav {
 .scroll {
 	padding-top: 10px;
 	background-color: #20232c;
+	border-bottom: 1px solid #1d1f27;
 }
 
 /* Logo */
@@ -25,17 +26,43 @@ nav {
 
 /* Icons */
 .nav-icons-container {
+	margin-right: 20px;
 	display: flex;
 	align-items: center;
 }
 
-.nav-icons-container .MuiSvgIcon-root {
-	font-size: 2rem;
+/* Add Icon */
+.nav-add-icon {
+	margin: 0 50px;
+	position: relative;
 }
 
-.nav-add-icon,
-.nav-view-icon {
-	color: white;
-	margin: 0 20px;
+.nav-toggle-plus {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	cursor: pointer;
+	border: 1px solid white;
+	height: 15px;
+	width: 2px;
+}
+
+.nav-toggle-minus {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+	border: 1px solid white;
+	height: 2px;
+	width: 15px;
+}
+
+/* View Icon */
+.nav-toggle-line {
+	margin: 6px 0;
+	border: 1px solid white;
+	height: 2px;
+	width: 30px;
 }
