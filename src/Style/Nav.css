@@ -3,11 +3,17 @@
 nav {
 	display: flex;
 	justify-content: space-between;
-	padding: 10px 70px 6px 70px;
-	/* background-color: #29292c; */
+	padding: 28px 70px 6px 70px;
 	position: fixed;
+	top: 0;
 	z-index: 5;
 	width: 100%;
+	transition: all 0.3s ease-in;
+}
+
+.scroll {
+	padding-top: 10px;
+	background-color: #20232c;
 }
 
 /* Logo */
