@@ -1,0 +1,50 @@
+/* Section */
+.about {
+	padding: 160px 0 200px 0;
+	background-color: #20232c;
+	position: relative;
+}
+
+/* About Heading */
+
+.about-heading {
+	text-align: center;
+	padding-bottom: 55px;
+}
+
+.about-heading h1 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	color: white;
+	font-size: 48px;
+	line-height: 50px;
+}
+
+.about-heading h3 {
+	color: #667084;
+	font-size: 14px;
+	font-family: "Montserrat", sans-serif;
+	line-height: 18px;
+	letter-spacing: 4px;
+	margin: 1.67em 0 2.3em 0;
+}
+
+.border {
+	width: 130px;
+	border-bottom: 1px solid white;
+	margin: auto;
+}
+
+/* About Discription */
+
+.about-container {
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	grid-column-gap: 60px;
+	width: 70%;
+	margin: auto;
+	color: #7a89ab;
+	font-size: 16px;
+	line-height: 30px;
+	font-family: "Source Sans Pro", sans-serif;
+}
