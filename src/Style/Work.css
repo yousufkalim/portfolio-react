@@ -1,9 +1,11 @@
+/* Main Container */
 .work {
 	padding: 160px 0 200px 0;
 	background-color: #191c23;
 	position: relative;
 }
 
+/* Work Section Headings and Description*/
 .work-heading {
 	text-align: center;
 	padding-bottom: 55px;
@@ -32,7 +34,7 @@
 	margin: auto;
 }
 
-.work-discription {
+.work-description {
 	text-align: center;
 	width: 46%;
 	margin: auto;
@@ -40,4 +42,31 @@
 	font-size: 16px;
 	line-height: 30px;
 	font-family: "Source Sans Pro", sans-serif;
+}
+
+/* Progress */
+
+.progress {
+	width: 62.3%;
+	margin: auto;
+	margin-top: 80px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.progress-block {
+	position: relative;
+}
+
+.progress-block i {
+	color: #7a89ab;
+	font-size: 76px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.circle {
+	width: 223px;
 }

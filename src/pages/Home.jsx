@@ -25,7 +25,7 @@ function Home() {
 			<Work
 				title={work.title}
 				tagline={work.tagline}
-				discription={work.discripttion}
+				description={work.descripttion}
 			/>
 		</React.Fragment>
 	);
