@@ -3,20 +3,18 @@ import React from "react";
 //Style
 import "../Style/Header.css";
 
-function Header() {
+function Header({ heading, title, qoute }) {
 	return (
 		<header>
 			<div className="header-container">
 				<div className="header-title">
-					<span>A FREELANCER</span>
+					<span>{heading}</span>
 				</div>
 				<div className="header-developer">
-					<span>Web Developer</span>
+					<span>{title}</span>
 				</div>
 				<div className="header-qoute">
-					<span>
-						IF IT DOESN’T CHALLENGE YOU, IT DOESN’T CHANGE YOU
-					</span>
+					<span>{qoute}</span>
 				</div>
 			</div>
 		</header>
