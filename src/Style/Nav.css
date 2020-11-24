@@ -3,7 +3,7 @@
 nav {
 	display: flex;
 	justify-content: space-between;
-	padding: 28px 70px 6px 70px;
+	padding: 28px 50px 6px 70px;
 	position: fixed;
 	top: 0;
 	z-index: 5;
@@ -30,7 +30,7 @@ nav {
 }
 
 .nav-icons-container .MuiSvgIcon-root {
-	font-size: 2.2rem;
+	font-size: 2rem;
 }
 
 .nav-add-icon,
