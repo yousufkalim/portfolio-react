@@ -1,0 +1,42 @@
+header {
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	background-image: url("../images/Home/man-full.jpg");
+	text-align: center;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 2;
+	position: relative;
+	overflow: hidden;
+}
+
+.header-title {
+	font-size: 20px;
+	color: white;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	line-height: 20px;
+	letter-spacing: 6px;
+}
+
+.header-developer {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	font-size: 140px;
+	color: #fa225b;
+	line-height: 168px;
+	padding: 29px 0;
+}
+
+.header-qoute {
+	font-family: "Montserrat", sans-serif;
+	color: #7a89ab;
+	font-size: 14px;
+	line-height: 17px;
+	letter-spacing: 5px;
+}

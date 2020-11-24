@@ -4,7 +4,10 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	padding: 10px 70px 6px 70px;
-	background-color: #29292c;
+	/* background-color: #29292c; */
+	position: fixed;
+	z-index: 5;
+	width: 100%;
 }
 
 /* Logo */
@@ -27,6 +30,6 @@ nav {
 .nav-add-icon,
 .nav-view-icon {
 	color: white;
-	padding: 0 20px;
+	margin: 0 20px;
 	cursor: pointer;
 }
