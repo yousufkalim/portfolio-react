@@ -1,6 +1,6 @@
 /* Main Container */
 .work {
-	padding: 86px 0 260px 0;
+	padding: 86px 0 290px 0;
 	background-color: #191c23;
 	position: relative;
 }
@@ -63,6 +63,7 @@
 	margin-top: 80px;
 	display: flex;
 	justify-content: space-between;
+	position: relative;
 }
 
 .progress-block {
@@ -76,6 +77,16 @@
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
+}
+
+.progress-block-container p {
+	font-family: "Montserrat", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	color: white;
+	letter-spacing: 4px;
+	text-align: center;
+	margin-top: 40px;
 }
 
 .circle {

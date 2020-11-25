@@ -34,35 +34,44 @@ function Progress() {
 			}}
 		>
 			<div className="progress">
-				<div className="progress-block">
-					<i className="fab fa-gitlab"></i>
-					<Circle
-						className="circle"
-						percent={circleOne}
-						strokeWidth="5"
-						strokeColor="#FA225A"
-						trailWidth="0"
-					/>
+				<div className="progress-block-container">
+					<div className="progress-block">
+						<i className="fab fa-gitlab"></i>
+						<Circle
+							className="circle"
+							percent={circleOne}
+							strokeWidth="5"
+							strokeColor="#FA225A"
+							trailWidth="0"
+						/>
+					</div>
+					<p>WEB DESIGN</p>
 				</div>
-				<div className="progress-block">
-					<i className="fas fa-shield-alt"></i>
-					<Circle
-						className="circle"
-						percent={circleTwo}
-						strokeWidth="5"
-						strokeColor="#FA225A"
-						trailWidth="0"
-					/>
+				<div className="progress-block-container">
+					<div className="progress-block">
+						<i className="fas fa-shield-alt"></i>
+						<Circle
+							className="circle"
+							percent={circleTwo}
+							strokeWidth="5"
+							strokeColor="#FA225A"
+							trailWidth="0"
+						/>
+					</div>
+					<p>RESPONSIVE</p>
 				</div>
-				<div className="progress-block">
-					<i className="far fa-gem"></i>
-					<Circle
-						className="circle"
-						percent={circleThree}
-						strokeWidth="5"
-						strokeColor="#FA225A"
-						trailWidth="0"
-					/>
+				<div className="progress-block-container">
+					<div className="progress-block">
+						<i className="far fa-gem"></i>
+						<Circle
+							className="circle"
+							percent={circleThree}
+							strokeWidth="5"
+							strokeColor="#FA225A"
+							trailWidth="0"
+						/>
+					</div>
+					<p>UI / UX</p>
 				</div>
 			</div>
 		</VisibilitySensor>

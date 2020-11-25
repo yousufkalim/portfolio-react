@@ -2,13 +2,14 @@
 import React from "react";
 
 //data
-import { header, about, work } from "../data/home";
+import { header, about, work, recent } from "../data/home";
 
 //Importing Components
 import Nav from "../components/Nav";
 import Header from "../components/Header";
 import About from "../components/About";
 import Work from "../components/Work";
+import Recent from "../components/Recent";
 
 //Component
 function Home() {
@@ -28,6 +29,8 @@ function Home() {
 				tagline={work.tagline}
 				description={work.descripttion}
 			/>
+
+			<Recent title={recent.title} tagline={recent.tagline} />
 		</React.Fragment>
 	);
 }
