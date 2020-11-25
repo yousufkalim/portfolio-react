@@ -10,6 +10,7 @@ import Header from "../components/Header";
 import About from "../components/About";
 import Work from "../components/Work";
 import Recent from "../components/Recent";
+import Portfolio from "../components/Portfolio";
 
 //Component
 function Home() {
@@ -31,6 +32,8 @@ function Home() {
 			/>
 
 			<Recent title={recent.title} tagline={recent.tagline} />
+
+			<Portfolio />
 		</React.Fragment>
 	);
 }

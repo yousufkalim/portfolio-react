@@ -27,7 +27,6 @@ function Progress() {
 		<VisibilitySensor
 			partialVisibility
 			onChange={(isVisible) => {
-				console.log(isVisible);
 				handleCircleOne(isVisible, circleOne, setCircleOne);
 				handleCircleTwo(isVisible, circleTwo, setCircleTwo);
 				handleCircleThree(isVisible, circleThree, setCircleThree);
