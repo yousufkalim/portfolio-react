@@ -20,21 +20,34 @@ function PortfolioItems({ title, link, thumbnail }) {
 	);
 }
 
-//Portfolio Component
-function Portfolio() {
+//View All Work Component
+function ViewAll() {
 	return (
-		<div className="portfolio">
-			{portfolio.map((item, index) => {
-				return (
-					<PortfolioItems
-						key={index}
-						title={item.title}
-						link={item.link}
-						thumbnail={item.thumbnail}
-					/>
-				);
-			})}
-		</div>
+		<Link to="/portfolio" className="view-all-link">
+			<p>VIEW ALL WORK</p>
+		</Link>
+	);
+}
+
+//Portfolio Component
+function Portfolio({ inHome }) {
+	return (
+		<React.Fragment>
+			<div className="portfolio">
+				{portfolio.map((item, index) => {
+					return (
+						<PortfolioItems
+							key={index}
+							title={item.title}
+							link={item.link}
+							thumbnail={item.thumbnail}
+						/>
+					);
+				})}
+			</div>
+
+			{inHome ? <ViewAll /> : null}
+		</React.Fragment>
 	);
 }
 

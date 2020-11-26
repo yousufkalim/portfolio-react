@@ -33,7 +33,8 @@ function Home() {
 
 			<Recent title={recent.title} tagline={recent.tagline} />
 
-			<Portfolio />
+			{/* Sending in home status so we can show only 6 items in home */}
+			<Portfolio inHome={true} />
 		</React.Fragment>
 	);
 }

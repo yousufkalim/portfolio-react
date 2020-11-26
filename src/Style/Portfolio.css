@@ -50,3 +50,28 @@
 	object-fit: contain;
 	width: 100%;
 }
+
+/* View All Work */
+.view-all-link {
+	width: 100%;
+	text-decoration: none;
+	display: block;
+	background-color: #fa225a;
+	position: relative;
+	color: white;
+	transition: all 0.3s;
+}
+
+.view-all-link:hover {
+	background-color: white;
+	color: #fa225a;
+}
+
+.view-all-link p {
+	text-align: center;
+	font-family: "Montserrat", sans-serif;
+	font-size: 14px;
+	line-height: 17px;
+	letter-spacing: 4px;
+	padding: 65px 0;
+}
