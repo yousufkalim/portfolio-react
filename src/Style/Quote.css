@@ -1,0 +1,59 @@
+/* Main Container */
+.quote {
+	position: relative;
+	background-color: #20232c;
+	text-align: center;
+	color: white;
+}
+
+/* Quote Container */
+.quote-container {
+	padding: 160px 0 230px 0;
+	background: url("../images/Home/quote-background.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: none;
+}
+
+/* Single Quotes */
+.quote-img img {
+	object-fit: cover;
+	width: 118px !important;
+	height: 83px;
+}
+
+.single-quote {
+	font-family: "Source Sans Pro", sans-serif;
+	font-style: italic;
+	font-size: 18px;
+	line-height: 30px;
+	width: 63%;
+	margin: auto;
+	letter-spacing: 2px;
+	padding: 53px 0 30px 0;
+}
+
+.quoter {
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 34px;
+	letter-spacing: 2px;
+	margin-bottom: 55px;
+}
+
+/* React Responsive Carousel Custom Styles */
+.slide {
+	background: none !important;
+}
+
+.carousel-status,
+.control-arrow {
+	display: none;
+}
+
+.dot {
+	outline: none;
+	width: 12px !important;
+	height: 12px !important;
+}

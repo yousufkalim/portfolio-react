@@ -5,6 +5,7 @@
 /node_modules
 /.pnp
 .pnp.js
+._.DS_Store
 
 # testing
 /coverage

@@ -11,6 +11,7 @@ import About from "../components/About";
 import Work from "../components/Work";
 import Recent from "../components/Recent";
 import Portfolio from "../components/Portfolio";
+import Quote from "../components/Quote";
 
 //Component
 function Home() {
@@ -35,6 +36,8 @@ function Home() {
 
 			{/* Sending in home status so we can show only 6 items in home */}
 			<Portfolio inHome={true} />
+
+			<Quote />
 		</React.Fragment>
 	);
 }
