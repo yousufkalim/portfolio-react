@@ -7,3 +7,27 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
+/* Global Button Style */
+button {
+	height: 60px;
+	width: 100%;
+	border: none;
+	border-radius: 2px;
+	outline: none;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 21px;
+	letter-spacing: 4px;
+	font-family: "Montserrat", sans-serif;
+	text-decoration: none;
+	background-color: #fa225a;
+	color: white;
+	transition: all 0.3s;
+}
+
+button:hover {
+	background-color: white;
+	color: #fa225a;
+	cursor: pointer;
+}

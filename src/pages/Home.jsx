@@ -3,6 +3,7 @@ import React from "react";
 
 //data
 import { header, about, work, recent, expertAdvice } from "../data/home";
+import contact from "../data/contact";
 
 //Importing Components
 import Nav from "../components/Nav";
@@ -13,6 +14,7 @@ import SkewedHeading from "../components/SkewedHeading";
 import Portfolio from "../components/Portfolio";
 import Quote from "../components/Quote";
 import ExpertAdvice from "../components/ExpertAdvice";
+import Contact from "../components/Contact";
 
 //Component
 function Home() {
@@ -51,6 +53,13 @@ function Home() {
 			/>
 
 			<ExpertAdvice />
+
+			<Contact
+				title={contact.title}
+				tagline={contact.tagline}
+				description={contact.description}
+				inHome={true}
+			/>
 		</React.Fragment>
 	);
 }
