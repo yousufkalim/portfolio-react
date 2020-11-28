@@ -13,14 +13,14 @@ import { Carousel } from "react-responsive-carousel";
 import "../Style/Quote.css";
 
 //Single Quote Component
-function SingleQuote({ quote, quoter }) {
+function SingleQuote({ quote, author }) {
 	return (
 		<>
 			<div className="quote-img">
 				<img src={quoteImage} alt="Quote" />
 			</div>
 			<p className="single-quote">{quote}</p>
-			<p className="quoter">{quoter}</p>
+			<p className="author">{author}</p>
 		</>
 	);
 }
@@ -41,7 +41,7 @@ function Quote() {
 							<SingleQuote
 								key={index}
 								quote={quote.quote}
-								quoter={quote.quoter}
+								author={quote.author}
 							/>
 						);
 					})}
