@@ -8,15 +8,21 @@ function Nav() {
 	//Initialinzing Scroll State
 	let [scroll, setScroll] = useState(false);
 
+	//Handle Scroll
+	const handleScroll = () => {
+		if (window.scrollY > 2) {
+			setScroll(true);
+		} else {
+			setScroll(false);
+		}
+	};
+
 	//useEffect to Event Listen
 	useEffect(() => {
-		window.addEventListener("scroll", () => {
-			if (window.scrollY > 2) {
-				setScroll(true);
-			} else {
-				setScroll(false);
-			}
-		});
+		window.addEventListener("scroll", handleScroll);
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
 	}, []);
 
 	return (

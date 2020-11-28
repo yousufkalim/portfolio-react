@@ -1,9 +1,10 @@
 /* Main Container */
 footer {
-	position: relative;
+	position: fixed;
+	bottom: 0;
 	width: 100%;
-	background-color: #1d2028;
 	color: #7a89ab;
+	background-color: #1d2028;
 	text-align: center;
 	padding-bottom: 60px;
 }
@@ -33,15 +34,17 @@ footer p {
 /* Tooltip */
 .tooltip {
 	visibility: hidden;
-	width: 120px;
+	width: 90px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 18px;
 	background-color: #555;
 	color: #fff;
 	text-align: center;
 	border-radius: 6px;
-	padding: 5px 0;
 	position: absolute;
 	z-index: 1;
-	bottom: 125%;
+	bottom: 75%;
 	left: 50%;
 	margin-left: -60px;
 	opacity: 0;
