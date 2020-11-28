@@ -12,6 +12,7 @@ import Work from "../components/Work";
 import SkewedHeading from "../components/SkewedHeading";
 import Portfolio from "../components/Portfolio";
 import Quote from "../components/Quote";
+import ExpertAdvice from "../components/ExpertAdvice";
 
 //Component
 function Home() {
@@ -48,6 +49,8 @@ function Home() {
 				title={expertAdvice.title}
 				tagline={expertAdvice.tagline}
 			/>
+
+			<ExpertAdvice />
 		</React.Fragment>
 	);
 }
