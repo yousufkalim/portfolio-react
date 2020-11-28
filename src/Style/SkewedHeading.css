@@ -1,36 +1,47 @@
 /* Main Container */
-.recent {
+.skewed {
 	text-align: center;
 	padding: 67px 0 100px 0;
-	background-color: #96c577;
 	position: relative;
 }
 
+/* Background color according component */
+.recentBackground,
+.recentBackground::before {
+	background-color: #96c577;
+}
+
+.skewedBackground,
+.skewedBackground::before {
+	background-color: #49629b;
+}
+
 /* Skew Effect */
-.recent::before {
+.skewed::before {
 	content: "";
 	width: 100%;
 	height: 140px;
 	position: absolute;
-	top: -80px;
+	top: -82px;
 	left: 0;
-	background: #96c577;
-	transform: skewY(-3.5deg);
+	transform: skewY(-3deg);
 }
 
 /* Headings */
-.recent-heading h1 {
+.skewed-heading h1 {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 600;
 	color: white;
 	font-size: 48px;
 	line-height: 50px;
+	letter-spacing: 1px;
 }
 
-.recent-heading h3 {
+.skewed-heading h3 {
 	color: white;
 	font-size: 14px;
 	font-family: "Montserrat", sans-serif;
+	font-weight: normal;
 	line-height: 18px;
 	letter-spacing: 4px;
 	margin: 1.67em 0 2.3em 0;

@@ -55,4 +55,10 @@ const recent = {
 	tagline: "WEB . BRANDING . UX/UI",
 };
 
-export { header, about, work, recent };
+//Advice
+const expertAdvice = {
+	title: "Expert Design Advice",
+	tagline: "TRENDING DESIGN NEWS",
+};
+
+export { header, about, work, recent, expertAdvice };

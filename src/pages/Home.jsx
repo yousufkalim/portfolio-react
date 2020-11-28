@@ -2,14 +2,14 @@
 import React from "react";
 
 //data
-import { header, about, work, recent } from "../data/home";
+import { header, about, work, recent, expertAdvice } from "../data/home";
 
 //Importing Components
 import Nav from "../components/Nav";
 import Header from "../components/Header";
 import About from "../components/About";
 import Work from "../components/Work";
-import Recent from "../components/Recent";
+import SkewedHeading from "../components/SkewedHeading";
 import Portfolio from "../components/Portfolio";
 import Quote from "../components/Quote";
 
@@ -32,12 +32,22 @@ function Home() {
 				description={work.descripttion}
 			/>
 
-			<Recent title={recent.title} tagline={recent.tagline} />
+			<SkewedHeading
+				bgClass="recentBackground"
+				title={recent.title}
+				tagline={recent.tagline}
+			/>
 
 			{/* Sending in home status so we can show only 6 items in home */}
 			<Portfolio inHome={true} />
 
 			<Quote />
+
+			<SkewedHeading
+				bgClass="skewedBackground"
+				title={expertAdvice.title}
+				tagline={expertAdvice.tagline}
+			/>
 		</React.Fragment>
 	);
 }
