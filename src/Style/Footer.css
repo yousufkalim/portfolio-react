@@ -1,0 +1,65 @@
+/* Main Container */
+footer {
+	position: relative;
+	width: 100%;
+	background-color: #1d2028;
+	color: #7a89ab;
+	text-align: center;
+	padding-bottom: 60px;
+}
+
+/* Copyright text */
+footer p {
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+
+/* Links */
+.social-links a {
+	height: 36px;
+	width: 36px;
+	display: inline-block;
+	text-decoration: none;
+	color: #1d2028;
+	background-color: white;
+	margin: 0 5px;
+	line-height: 36px;
+	font-size: 1.4rem;
+}
+
+/* Tooltip */
+.tooltip {
+	visibility: hidden;
+	width: 120px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -60px;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.tooltip::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+}
+
+.social-links a:hover .tooltip {
+	visibility: visible;
+	opacity: 1;
+}

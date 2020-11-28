@@ -15,6 +15,7 @@ import Portfolio from "../components/Portfolio";
 import Quote from "../components/Quote";
 import ExpertAdvice from "../components/ExpertAdvice";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 //Component
 function Home() {
@@ -60,6 +61,8 @@ function Home() {
 				description={contact.description}
 				inHome={true}
 			/>
+
+			<Footer />
 		</React.Fragment>
 	);
 }
