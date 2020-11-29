@@ -76,9 +76,40 @@ nav {
 }
 
 /* View Icon */
+
+.nav-view-icon:hover {
+	cursor: pointer;
+}
+.nav-view-icon:hover .nav-toggle-line {
+	border-color: #7a89ab;
+}
+
+.ham-clicked .second-line {
+	visibility: hidden;
+}
+
+.ham-clicked .nav-toggle-line {
+	border-color: white;
+}
+
+/* .ham-clicked .first-line {
+	transform-origin: top left;
+	transform: rotate(45deg);
+}
+
+.ham-clicked .third-line {
+	transform-origin: bottom left;
+	transform: rotate(-45deg);
+} */
+
+.ham-clicked:hover .nav-toggle-line {
+	border-color: #f9225b;
+}
+
 .nav-toggle-line {
 	margin: 6px 0;
 	border: 1px solid white;
 	height: 2px;
 	width: 30px;
+	transition: all 0.3s linear;
 }
