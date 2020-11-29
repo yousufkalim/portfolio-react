@@ -33,8 +33,15 @@ nav {
 
 /* Add Icon */
 .nav-add-icon {
-	margin: 0 50px;
+	margin: 0 40px;
 	position: relative;
+	cursor: pointer;
+	padding: 10px;
+}
+
+.nav-add-icon:hover .nav-toggle-plus,
+.nav-add-icon:hover .nav-toggle-minus {
+	border-color: #7a89ab;
 }
 
 .nav-toggle-plus {
@@ -42,10 +49,10 @@ nav {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	cursor: pointer;
 	border: 1px solid white;
 	height: 15px;
 	width: 2px;
+	transition: all 0.2s linear;
 }
 
 .nav-toggle-minus {
@@ -53,10 +60,19 @@ nav {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	cursor: pointer;
 	border: 1px solid white;
 	height: 2px;
 	width: 15px;
+	transition: all 0.2s linear;
+}
+
+/* if plus icon clicked */
+.plus-clicked .nav-toggle-plus {
+	display: none;
+}
+
+.plus-clicked .nav-toggle-minus {
+	border-color: #f9225b;
 }
 
 /* View Icon */

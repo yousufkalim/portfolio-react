@@ -35,19 +35,19 @@ function Footer() {
 			<div className="footer-container">
 				<p>{footer.copyright}</p>
 				<div className="social-links">
-					<a href={footer.linkedIn} target="_blank">
+					<a href={footer.linkedIn} target="_blank" rel="noreferrer">
 						<span className="tooltip">linkedIn</span>
 						<i class="fab fa-linkedin-in"></i>
 					</a>
-					<a href={footer.facebook} target="_blank">
+					<a href={footer.facebook} target="_blank" rel="noreferrer">
 						<span className="tooltip">facebook</span>
 						<i class="fab fa-facebook-f"></i>
 					</a>
-					<a href={footer.twitter} target="_blank">
+					<a href={footer.twitter} target="_blank" rel="noreferrer">
 						<span className="tooltip">twitter</span>
 						<i class="fab fa-twitter"></i>
 					</a>
-					<a href={footer.instagram} target="_blank">
+					<a href={footer.instagram} target="_blank" rel="noreferrer">
 						<span className="tooltip">instagram</span>
 						<i class="fab fa-instagram"></i>
 					</a>

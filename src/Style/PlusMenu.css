@@ -1,0 +1,92 @@
+/* Main Container */
+.plus-menu {
+	height: 100vh;
+	overflow: hidden;
+	background-color: rgba(29, 32, 40, 0.9);
+	position: fixed;
+	z-index: 5;
+	transition: all 0.3s linear;
+	width: 0;
+}
+
+.plus-menu-container {
+	padding: 18px 30px 100px 30px;
+	height: 100vh;
+	width: 300px;
+}
+
+/* Close Button */
+.close-btn {
+	color: white;
+	font-size: 1.1rem;
+	cursor: pointer;
+}
+
+/* Headings */
+.plus-heading {
+	font-family: "Montserrat", sans-serif;
+	color: white;
+	font-size: 13px;
+	padding: 35px 0 25px 0;
+	font-weight: normal;
+}
+
+/* About Section */
+.plus-about p {
+	color: #7a89ab;
+	font-family: "Source Sans Pro", sans-serif;
+	line-height: 30px;
+	padding-bottom: 12px;
+}
+
+/* Recent Section */
+.plus-recent a img {
+	width: 66px;
+	height: 66px;
+	margin: 3px;
+	background-color: black;
+	transition: all 0.2s linear;
+}
+
+.plus-recent a img:hover {
+	opacity: 0.5;
+}
+
+/* Recent Posts Section */
+.plus-posts ul {
+	list-style-type: none;
+}
+
+.plus-posts ul li a:before {
+	content: ">";
+	color: #f9225b;
+	display: inline;
+	width: 1em;
+	padding-right: 10px;
+	margin-left: -3px;
+	transition: all 0.3s;
+}
+
+.plus-posts ul li a {
+	text-decoration: none;
+	color: #f9225b;
+	font-family: "Source Sans Pro", sans-serif;
+	font-style: unset;
+	line-height: 35px;
+	font-size: 16px;
+	font-weight: normal;
+	border-bottom: 1px solid #2a2e38;
+	width: 100%;
+	display: inline-block;
+	padding: 5px;
+	transition: all 0.3s linear;
+}
+
+.plus-posts ul li:first-child {
+	margin-top: -10px;
+}
+
+.plus-posts ul li a:hover,
+.plus-posts ul li a:hover:before {
+	color: white;
+}

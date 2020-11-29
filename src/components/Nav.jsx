@@ -1,12 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
+import PlusMenu from "./PlusMenu";
+
 //Gallery
 import logo from "../images/logo.png";
 
 function Nav() {
 	//Initialinzing Scroll State
 	let [scroll, setScroll] = useState(false);
+
+	//State for Plus Icon
+	let [plusClicked, setPlusClicked] = useState(false);
 
 	//Handle Scroll
 	const handleScroll = () => {
@@ -26,25 +31,35 @@ function Nav() {
 	}, []);
 
 	return (
-		<nav className={scroll && "scroll"}>
-			<div className="logo-container">
-				<Link to="/">
-					<img src={logo} alt="Logo" />
-				</Link>
-			</div>
+		<>
+			<nav className={scroll && "scroll"}>
+				<div className="logo-container">
+					<Link to="/">
+						<img src={logo} alt="Logo" />
+					</Link>
+				</div>
 
-			<div className="nav-icons-container">
-				<div className="nav-add-icon">
-					<div className="nav-toggle-plus"></div>
-					<div className="nav-toggle-minus"></div>
+				<div className="nav-icons-container">
+					<div
+						className={`nav-add-icon ${
+							plusClicked && "plus-clicked"
+						}`}
+						onClick={() => setPlusClicked((prev) => !prev)}
+					>
+						<div className="nav-toggle-plus"></div>
+						<div className="nav-toggle-minus"></div>
+					</div>
+					<div className="nav-view-icon">
+						<div className="nav-toggle-line"></div>
+						<div className="nav-toggle-line"></div>
+						<div className="nav-toggle-line"></div>
+					</div>
 				</div>
-				<div className="nav-view-icon">
-					<div className="nav-toggle-line"></div>
-					<div className="nav-toggle-line"></div>
-					<div className="nav-toggle-line"></div>
-				</div>
-			</div>
-		</nav>
+			</nav>
+
+			{/* Side bar on Plus Icon */}
+			<PlusMenu clicked={plusClicked} setClicked={setPlusClicked} />
+		</>
 	);
 }
 
