@@ -50,7 +50,7 @@ nav {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	border: 1px solid white;
-	height: 15px;
+	height: 18px;
 	width: 2px;
 	transition: all 0.2s linear;
 }
@@ -62,7 +62,7 @@ nav {
 	transform: translate(-50%, -50%);
 	border: 1px solid white;
 	height: 2px;
-	width: 15px;
+	width: 18px;
 	transition: all 0.2s linear;
 }
 
@@ -77,39 +77,49 @@ nav {
 
 /* View Icon */
 
-.nav-view-icon:hover {
+.nav-view-icon {
+	margin-top: 6px;
+	width: 30px;
+	height: 32px;
 	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
+
+.nav-view-icon:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
 .nav-view-icon:hover .nav-toggle-line {
-	border-color: #7a89ab;
+	background: #7a89ab;
 }
 
 .ham-clicked .second-line {
 	visibility: hidden;
 }
 
-.ham-clicked .nav-toggle-line {
-	border-color: white;
-}
-
-/* .ham-clicked .first-line {
-	transform-origin: top left;
+.ham-clicked .first-line {
+	transform-origin: center left;
 	transform: rotate(45deg);
 }
 
 .ham-clicked .third-line {
-	transform-origin: bottom left;
+	transform-origin: center left;
 	transform: rotate(-45deg);
-} */
+}
 
 .ham-clicked:hover .nav-toggle-line {
-	border-color: #f9225b;
+	background: #f9225b;
 }
 
 .nav-toggle-line {
-	margin: 6px 0;
-	border: 1px solid white;
+	transform-origin: center left;
 	height: 2px;
+	background: #fff;
 	width: 30px;
-	transition: all 0.3s linear;
+	transition: transform 0.3s;
+	text-align: center;
 }
