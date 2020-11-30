@@ -2,8 +2,7 @@
 import React from "react";
 
 //Importing Routes
-import PageRoutes from "./routes/PageRoutes";
-import PortfolioRoutes from "./routes/PortfolioRoutes";
+import Routes from "./routes/Routes";
 
 //Styles
 import "./Style/App.css";
@@ -12,8 +11,7 @@ import "./Style/App.css";
 function App() {
 	return (
 		<React.Fragment>
-			<PageRoutes />
-			<PortfolioRoutes />
+			<Routes />
 		</React.Fragment>
 	);
 }
