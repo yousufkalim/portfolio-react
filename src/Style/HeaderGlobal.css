@@ -1,16 +1,16 @@
 /* Main Container */
-#header {
+#header-global {
 	width: 100%;
-	height: 100vh;
+	height: 80vh;
 	position: relative;
 	z-index: -2;
 }
 
 /* Header Container */
-.header-container {
-	background-image: url("../images/Home/man-full.jpg");
+.header-global-container {
+	background-image: url("../images/Recent/headerbg.jpg");
 	width: 100%;
-	height: 100%;
+	height: 80%;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -23,25 +23,16 @@
 	align-items: center;
 }
 
-.header-title {
-	font-size: 20px;
-	color: white;
+.header-global-title {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 600;
-	line-height: 20px;
-	letter-spacing: 6px;
-}
-
-.header-developer {
-	font-family: "Montserrat", sans-serif;
-	font-weight: 600;
-	font-size: 140px;
-	color: #fa225b;
-	line-height: 168px;
+	font-size: 100px;
+	color: #fff;
+	line-height: 120px;
 	padding: 29px 0;
 }
 
-.header-qoute {
+.header-global-qoute {
 	font-family: "Montserrat", sans-serif;
 	color: #7a89ab;
 	font-size: 14px;

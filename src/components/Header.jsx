@@ -7,7 +7,7 @@ import "../Style/Header.css";
 //Component
 function Header({ heading, title, qoute }) {
 	return (
-		<header>
+		<header id="header">
 			<div className="header-container">
 				<div className="header-title">
 					<span>{heading}</span>
