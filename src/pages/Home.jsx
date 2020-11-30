@@ -3,7 +3,6 @@ import React from "react";
 
 //data
 import { header, about, work, recent, expertAdvice } from "../data/home";
-import contact from "../data/contact";
 
 //Importing Components
 import Nav from "../components/Nav";
@@ -55,12 +54,7 @@ function Home() {
 
 			<ExpertAdvice />
 
-			<Contact
-				title={contact.title}
-				tagline={contact.tagline}
-				description={contact.description}
-				inHome={true}
-			/>
+			<Contact inHome={true} />
 
 			<Footer />
 		</React.Fragment>

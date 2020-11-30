@@ -6,7 +6,7 @@
 	position: fixed;
 	z-index: -6;
 	opacity: 0;
-	transition: all 0.3s linear;
+	transition: all 0.5s linear;
 	display: flex;
 	align-items: center;
 	justify-content: center;

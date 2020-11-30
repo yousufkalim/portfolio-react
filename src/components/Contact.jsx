@@ -2,6 +2,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
+//Data
+import contact from "../data/contact";
+
 //Actions
 import { handleInput, handleSubmit } from "../actions";
 
@@ -48,19 +51,19 @@ function ContactForm() {
 }
 
 //Contact Component
-function Contact({ title, tagline, description, inHome }) {
+function Contact({ inHome }) {
 	return (
 		<section className="contact">
 			<div className="contact-heading">
-				<h1>{title}</h1>
-				<h3>{tagline}</h3>
+				<h1>{contact.title}</h1>
+				<h3>{contact.tagline}</h3>
 				<div
 					className="border"
 					style={{ borderColor: "#7a89ab" }}
 				></div>
 			</div>
 			<div className="contact-container">
-				<p>{description}</p>
+				<p>{contact.description}</p>
 
 				{inHome ? (
 					<ContactForm />

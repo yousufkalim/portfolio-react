@@ -9,10 +9,13 @@ import portfolio from "../data/portfolio";
 import "../Style/Portfolio.css";
 
 //Portfolio Items Component
-function PortfolioItems({ title, link, thumbnail }) {
+function PortfolioItems({ title, link, thumbnail, inHome }) {
 	return (
 		<Link to={link}>
-			<div className="portfolio-item">
+			<div
+				className="portfolio-item"
+				style={inHome ? { border: "1px solid black" } : null}
+			>
 				<div className="portfolio-overlay">{title}</div>
 				<img src={thumbnail} alt="Thumbnail" />
 			</div>
@@ -41,6 +44,7 @@ function Portfolio({ inHome }) {
 							title={item.title}
 							link={item.link}
 							thumbnail={item.thumbnail}
+							inHome={inHome}
 						/>
 					);
 				})}
