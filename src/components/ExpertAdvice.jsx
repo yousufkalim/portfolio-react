@@ -1,5 +1,6 @@
 //Init
 import React from "react";
+import { Link } from "react-router-dom";
 
 //Article Data
 import blog from "../data/blog";
@@ -8,15 +9,15 @@ import blog from "../data/blog";
 import "../Style/ExpertAdvice.css";
 
 //Single Article Container
-function Article({ image, title, metaDescription }) {
+function Article({ link, image, title, metaDescription }) {
 	return (
 		<div className="article">
-			<a href="http://blog.kalim.pk/">
+			<Link to={link}>
 				<div className="article-img-container">
 					<div className="article-overlay">{title}</div>
 					<img src={image} alt="Article Thumbnail" />
 				</div>
-			</a>
+			</Link>
 			<div className="article-info">
 				<h2>{title}</h2>
 				<p>{metaDescription}</p>
@@ -33,6 +34,7 @@ function ExpertAdvice() {
 				return (
 					<Article
 						key={index}
+						link={article.link}
 						image={article.image}
 						title={article.title}
 						metaDescription={article.metaDescription}

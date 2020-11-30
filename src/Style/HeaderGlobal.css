@@ -23,6 +23,10 @@
 	align-items: center;
 }
 
+.inPortfolio {
+	background-image: url("../images/Recent/portfoliobg.jpg") !important;
+}
+
 .header-global-title {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 600;

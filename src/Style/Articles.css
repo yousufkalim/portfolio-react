@@ -1,0 +1,83 @@
+/* Main Container */
+.articles-container {
+	position: relative;
+	background-color: #191c23;
+	width: 100%;
+	padding: 100px 0 50px 0;
+	margin-bottom: 146px;
+}
+
+/* Overlay */
+.single-article {
+	width: 60%;
+	margin: auto;
+	text-align: left;
+}
+
+.single-article a {
+	text-decoration: none;
+	color: white;
+}
+
+.single-article-img-container {
+	width: 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+.single-article-overlay {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	height: 100%;
+	background-color: rgba(250, 34, 90, 0.8);
+	transition: all 0.3s;
+	font-family: "Source Sans Pro", sans-serif;
+	line-height: 30px;
+	width: 0;
+	font-size: 0;
+	overflow: hidden;
+	font-weight: normal;
+}
+
+.single-article a:hover .single-article-overlay {
+	width: 100%;
+	font-size: 29px;
+}
+
+/* Info */
+.single-article img {
+	object-fit: contain;
+	max-width: 100%;
+}
+
+.single-article-info {
+	margin: 35px 0 90px 0;
+}
+
+.single-article h2 {
+	color: #fa225b;
+	font-family: "Montserrat", sans-serif;
+	font-size: 28px;
+	line-height: 40px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	display: inline-block;
+	transition: all 0.3s;
+}
+
+.single-article h2:hover {
+	color: white;
+	cursor: pointer;
+}
+
+.single-article p {
+	color: #7a89ab;
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: normal;
+}

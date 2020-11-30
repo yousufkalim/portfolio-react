@@ -5,10 +5,14 @@ import React from "react";
 import "../Style/HeaderGlobal.css";
 
 //Component
-function HeaderGlobal({ title, quote }) {
+function HeaderGlobal({ inPortfolio, title, quote }) {
 	return (
 		<header id="header-global">
-			<div className="header-global-container">
+			<div
+				className={`header-global-container ${
+					inPortfolio && "inPortfolio"
+				}`}
+			>
 				<div className="header-global-title">
 					<span>{title}</span>
 				</div>

@@ -17,7 +17,11 @@ function Recent() {
 	return (
 		<React.Fragment>
 			<Nav />
-			<HeaderGlobal title={header.title} quote={header.quote} />
+			<HeaderGlobal
+				inPortfolio={true}
+				title={header.title}
+				quote={header.quote}
+			/>
 
 			<InspiredHeading />
 
