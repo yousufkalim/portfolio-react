@@ -26,10 +26,13 @@ function SingleQuote({ quote, author }) {
 }
 
 //Quote Component
-function Quote() {
+function Quote({ inHome }) {
 	return (
 		<section className="quote">
-			<div className="quote-container">
+			<div
+				className="quote-container"
+				style={inHome ? { paddingBottom: "160px" } : null}
+			>
 				<Carousel
 					autoPlay
 					infiniteLoop

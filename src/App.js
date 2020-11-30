@@ -1,23 +1,20 @@
 //Init
 import React from "react";
-import { Switch, Route, Redirect } from "react-router-dom";
 
-//Pages
-import Home from "./pages/Home";
-import Recent from "./pages/Recent";
+//Importing Routes
+import PageRoutes from "./routes/PageRoutes";
+import PortfolioRoutes from "./routes/PortfolioRoutes";
 
 //Styles
 import "./Style/App.css";
-import "./Style/Nav.css";
 
 //Component
 function App() {
 	return (
-		<Switch>
-			<Route exact path="/" component={Home} />
-			<Route exact path="/portfolio" component={Recent} />
-			<Redirect to="/" />
-		</Switch>
+		<React.Fragment>
+			<PageRoutes />
+			<PortfolioRoutes />
+		</React.Fragment>
 	);
 }
 

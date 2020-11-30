@@ -44,7 +44,7 @@ function Home() {
 			{/* Sending in home status so we can show only 6 items in home */}
 			<Portfolio inHome={true} />
 
-			<Quote />
+			<Quote inHome={true} />
 
 			<SkewedHeading
 				bgClass="skewedBackground"

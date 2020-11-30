@@ -1,0 +1,100 @@
+/* Main Container */
+.project {
+	position: relative;
+	width: 100%;
+}
+
+/* Cover Image */
+.project-img {
+	max-width: 100%;
+	max-height: 80vh;
+}
+
+.project-img img {
+	object-fit: cover;
+	width: 100%;
+	max-height: 80vh;
+}
+
+/* Project Details */
+.project-details {
+	width: 100%;
+	background-color: #20232c;
+	padding: 260px 0 160px 0;
+}
+
+.project-details-container {
+	width: 62.2%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Project Info */
+.project-info {
+	flex-basis: 48.5%;
+	color: white;
+}
+
+.project-info span:first-child {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	font-size: 48px;
+	line-height: 58px;
+	letter-spacing: 1px;
+	display: block;
+	margin-bottom: 22px;
+}
+
+.project-info div p {
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 16px;
+	line-height: 30px;
+	color: #7a89ab;
+}
+
+.project-info div span {
+	font-family: "Montserrat", sans-serif;
+	font-size: 24px;
+	line-height: 30px;
+	font-style: normal;
+	display: block;
+}
+
+/* Project Card */
+.project-card {
+	flex-basis: 49%;
+	background-color: #1a1d24;
+	border: 1px solid #2e313a;
+	padding: 50px 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.project-card table {
+	width: 100%;
+}
+
+.project-card table tr {
+	width: 100%;
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.project-card table tr td:first-child {
+	color: white;
+	font-family: "Montserrat", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: 4px;
+	flex-basis: 65%;
+}
+
+.project-card table tr td:last-child {
+	font-family: "Source Sans Pro", sans-serif;
+	color: #555c6e;
+	font-size: 16px;
+	line-height: 30px;
+	flex-basis: 35%;
+}

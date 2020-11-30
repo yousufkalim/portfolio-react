@@ -9,6 +9,9 @@ import Hamburger from "./Hamburger";
 //Gallery
 import logo from "../images/logo.png";
 
+//Style
+import "../Style/Nav.css";
+
 function Nav() {
 	//Initialinzing Scroll State
 	let [scroll, setScroll] = useState(false);
