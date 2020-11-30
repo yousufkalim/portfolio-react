@@ -1,0 +1,34 @@
+/* Main Container */
+.inspired-heading {
+	position: relative;
+	background-color: #96c577;
+	text-align: center;
+	color: white;
+	padding: 130px 0 155px 0;
+}
+
+/* Heading */
+.inspired-heading h1 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	font-size: 48px;
+	line-height: 58px;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+}
+
+/* Tagline */
+.inspired-heading span {
+	font-family: "Montserrat", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: 4px;
+	display: block;
+	margin-bottom: 35px;
+}
+
+/* Fntawesome Gem Icon */
+.gem-icon i {
+	font-size: 80px;
+	margin-top: 25px;
+}

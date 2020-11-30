@@ -7,7 +7,7 @@ import { header } from "../data/recent";
 //Components
 import Nav from "../components/Nav";
 import HeaderGlobal from "../components/HeaderGlobal";
-import SkewedHeading from "../components/SkewedHeading";
+import InspiredHeading from "../components/InspiredHeading";
 import Portfolio from "../components/Portfolio";
 
 //Recent Component
@@ -16,6 +16,8 @@ function Recent() {
 		<React.Fragment>
 			<Nav />
 			<HeaderGlobal title={header.title} quote={header.quote} />
+
+			<InspiredHeading />
 		</React.Fragment>
 	);
 }
