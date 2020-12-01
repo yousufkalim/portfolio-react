@@ -2,7 +2,7 @@
 const header = {
 	heading: "A FREELANCER",
 	title: "Web Developer",
-	qoute: "IF IT DOESN’T CHALLENGE YOU, IT DOESN’T CHANGE YOU",
+	quote: "IF IT DOESN’T CHALLENGE YOU, IT DOESN’T CHANGE YOU",
 };
 
 //About

@@ -28,7 +28,7 @@ function HeaderGlobal({ inPortfolio, title, quote }) {
 					<div className="header-global-title">
 						<span>{title}</span>
 					</div>
-					<div className="header-global-qoute">
+					<div className="header-global-quote">
 						<span>{quote}</span>
 					</div>
 				</div>

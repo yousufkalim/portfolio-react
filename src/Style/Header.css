@@ -26,7 +26,7 @@
 /* Animation of Text */
 .header-title,
 .header-developer,
-.header-qoute {
+.header-quote {
 	transition: all 1s ease-in-out;
 	opacity: 0;
 	transform: translateY(50px);
@@ -34,7 +34,7 @@
 
 .header-true .header-title,
 .header-true .header-developer,
-.header-true .header-qoute {
+.header-true .header-quote {
 	opacity: 1;
 	transform: translateY(0);
 }

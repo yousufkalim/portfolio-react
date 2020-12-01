@@ -24,7 +24,7 @@ function Home() {
 			<Header
 				heading={header.heading}
 				title={header.title}
-				qoute={header.qoute}
+				quote={header.quote}
 			/>
 
 			<About columnOne={about.columnOne} columnTwo={about.columnTwo} />

@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 import "../Style/Header.css";
 
 //Component
-function Header({ heading, title, qoute }) {
+function Header({ heading, title, quote }) {
 	//Initializing State to Animate Header
 	let [visible, setVisible] = useState(false);
 
@@ -23,7 +23,7 @@ function Header({ heading, title, qoute }) {
 					<span>{title}</span>
 				</div>
 				<div className="header-quote">
-					<span>{qoute}</span>
+					<span>{quote}</span>
 				</div>
 			</div>
 		</header>
