@@ -19,7 +19,9 @@ function Article({ link, image, title, metaDescription }) {
 				</div>
 			</Link>
 			<div className="article-info">
-				<h2>{title}</h2>
+				<Link to={link}>
+					<h2>{title}</h2>
+				</Link>
 				<p>{metaDescription}</p>
 			</div>
 		</div>

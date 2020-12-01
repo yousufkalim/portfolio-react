@@ -41,7 +41,9 @@ function Articles() {
 								</div>
 							</Link>
 							<div className="single-article-info">
-								<h2>{article.title}</h2>
+								<Link to={article.link}>
+									<h2>{article.title}</h2>
+								</Link>
 								<p>{article.metaDescription}</p>
 							</div>
 						</div>
