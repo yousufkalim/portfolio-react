@@ -8,6 +8,22 @@ import blog from "../data/blog";
 //Style
 import "../Style/PlusMenu.css";
 
+//Recent Projects
+function RecentProjects() {
+	return (
+		<div className="plus-recent">
+			<h3 className="plus-heading">RECENT WORKS</h3>
+			{portfolio.map((item) => {
+				return (
+					<a href={item.link}>
+						<img src={item.thumbnail} alt="Portfolio Item" />
+					</a>
+				);
+			})}
+		</div>
+	);
+}
+
 //Component
 function PlusMenu({ clicked, setClicked }) {
 	return (
@@ -31,19 +47,7 @@ function PlusMenu({ clicked, setClicked }) {
 				</div>
 
 				{/* Recent Section */}
-				<div className="plus-recent">
-					<h3 className="plus-heading">RECENT WORKS</h3>
-					{portfolio.map((item) => {
-						return (
-							<a href={item.link}>
-								<img
-									src={item.thumbnail}
-									alt="Portfolio Item"
-								/>
-							</a>
-						);
-					})}
-				</div>
+				<RecentProjects />
 
 				{/* Posts Section */}
 				<div className="plus-posts">
@@ -85,3 +89,4 @@ function PlusMenu({ clicked, setClicked }) {
 
 //Export
 export default PlusMenu;
+export { RecentProjects };

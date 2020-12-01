@@ -15,6 +15,22 @@ import { ContactForm } from "../components/Contact";
 import { SocialLinks } from "../components/Footer";
 import Footer from "../components/Footer";
 
+//Contact Credentials
+function ContactCredentials() {
+	return (
+		<div className="contact-credentials">
+			<p>Phone: {contactMe.phone}</p>
+			<p>
+				Email:{" "}
+				<a href={`mailto:${contactMe.email}`}>{contactMe.email}</a>
+			</p>
+			<p>
+				Web: <Link to="/">{contactMe.web}</Link>
+			</p>
+		</div>
+	);
+}
+
 // Component
 function ContactMe() {
 	return (
@@ -40,18 +56,7 @@ function ContactMe() {
 						<h2>Let's Talk.</h2>
 						<div className="contact-border"></div>
 						<h6>CONTACT DETAILS</h6>
-						<div className="contact-credentials">
-							<p>Phone: {contactMe.phone}</p>
-							<p>
-								Email:{" "}
-								<a href={`mailto:${contactMe.email}`}>
-									{contactMe.email}
-								</a>
-							</p>
-							<p>
-								Web: <Link to="/">{contactMe.web}</Link>
-							</p>
-						</div>
+						<ContactCredentials />
 					</div>
 					<div className="contact-details-card">
 						<h2>Connect.</h2>
@@ -77,3 +82,4 @@ function ContactMe() {
 
 //Export
 export default ContactMe;
+export { ContactCredentials };

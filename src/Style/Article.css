@@ -46,10 +46,18 @@ Blog
 =============
 */
 
+.article-content {
+	position: relative;
+	width: 65%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	padding: 130px 0 160px 0;
+}
+
 /* Container */
 .single-article-page-container {
-	padding: 130px 0;
-	width: 36%;
+	flex-basis: 57%;
 	margin: auto;
 	font-family: "Source Sans Pro", sans-serif;
 	color: #7a89ab;
@@ -82,7 +90,7 @@ Blog
 .blog-img {
 	margin: 40px 0;
 	position: relative;
-	width: 150%;
+	width: 100%;
 	left: 50%;
 	transform: translateX(-50%);
 	overflow: hidden;
@@ -108,4 +116,98 @@ Blog
 	margin: 30px auto;
 	padding: 10px;
 	line-height: 30px;
+}
+
+/* 
+==================
+Article Contact
+==================
+*/
+.article-contact .contact::before {
+	background-color: #ebeced;
+	content: "";
+	width: 100%;
+	height: 140px;
+	position: absolute;
+	top: -55px;
+	left: 0;
+	transform: skewY(-3deg);
+}
+
+.article-contact .contact {
+	padding-top: 86px !important;
+}
+
+/* 
+===================
+Aside
+===================
+*/
+
+/* Main */
+aside {
+	flex-basis: 32%;
+}
+
+/* Container */
+.sidebar {
+	border: 1px solid #2e313a;
+	background-color: #1a1d24;
+	color: #7a89ab;
+	padding: 45px 30px;
+}
+
+/* Heading */
+aside h3 {
+	font-family: "Montserrat", sans-serif;
+	font-size: 24px;
+	line-height: 30px;
+}
+
+/* Recent Projects */
+aside .plus-recent {
+	margin: 25px 0 50px 0;
+	overflow: hidden;
+}
+
+aside .plus-heading {
+	display: none;
+}
+
+/* Border after heading */
+.aside-border {
+	border-bottom: 1px solid #7a89ab;
+	width: 130px;
+	margin: 35px 0;
+}
+
+/* About Section */
+aside p {
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 16px;
+	line-height: 30px;
+}
+
+/* Contact Credentials */
+aside .contact-credentials p {
+	color: #7a89ab;
+}
+
+/* Address */
+aside span {
+	display: block;
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 16px;
+	line-height: 30px;
+	margin: 20px 0;
+}
+
+/* Social Links */
+aside .social-links {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+aside .social-links .tooltip {
+	display: none;
 }
