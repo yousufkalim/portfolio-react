@@ -36,6 +36,10 @@ footer p {
 	background-color: rgba(255, 255, 255, 0.7);
 }
 
+.social-credentials .social-links a:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+
 /* Tooltip */
 .tooltip {
 	visibility: hidden;
@@ -54,6 +58,11 @@ footer p {
 	margin-left: -60px;
 	opacity: 0;
 	transition: opacity 0.3s;
+}
+
+.social-credentials .tooltip {
+	bottom: 50%;
+	left: 45.5%;
 }
 
 .tooltip::after {
