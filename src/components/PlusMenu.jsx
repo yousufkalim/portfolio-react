@@ -38,11 +38,10 @@ function PlusMenu({ clicked, setClicked }) {
 				<div className="plus-about">
 					<h3 className="plus-heading">ABOUT MY WORK</h3>
 					<p>
-						I’m a certified Software Engineer from the University of
-						Lahore, I did BSSE in 2014 and I’m doing my work on
+						I’m full-stack web developer, I’m doing my work on
 						regular bases, I have over six years of experience in
-						Web Designing and Development, I build websites in
-						MongoDB, ExpressJS, ReactJS and NodeJS Stack.
+						Web Designing and Development, I build websites in MERN
+						(MongoDB, ExpressJS, ReactJS and NodeJS) Stack.
 					</p>
 				</div>
 
