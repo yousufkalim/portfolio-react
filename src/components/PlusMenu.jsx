@@ -1,5 +1,6 @@
 //init
-import React, { useState } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 
 //Data
 import portfolio from "../data/portfolio";
@@ -53,31 +54,13 @@ function PlusMenu({ clicked, setClicked }) {
 					<h3 className="plus-heading">RECENT POSTS</h3>
 					<ul type="">
 						<li>
-							<a
-								href="http://blog.kalim.pk"
-								target="_blank"
-								rel="noreferrer"
-							>
-								{blog[0].title}
-							</a>
+							<Link to={blog[0].link}>{blog[0].title}</Link>
 						</li>
 						<li>
-							<a
-								href="http://blog.kalim.pk"
-								target="_blank"
-								rel="noreferrer"
-							>
-								{blog[1].title}
-							</a>
+							<Link to={blog[1].link}>{blog[1].title}</Link>
 						</li>
 						<li>
-							<a
-								href="http://blog.kalim.pk"
-								target="_blank"
-								rel="noreferrer"
-							>
-								{blog[2].title}
-							</a>
+							<Link to={blog[2].link}>{blog[2].title}</Link>
 						</li>
 					</ul>
 				</div>

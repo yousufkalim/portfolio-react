@@ -3,13 +3,13 @@ import axios from "axios";
 
 //Work File Actions
 function handleCircleOne(isVisible, circleOne, setCircleOne) {
-	if (isVisible && circleOne !== 88) {
+	if (isVisible && circleOne < 88) {
 		var a = 0;
 		var run = setInterval(frame, 10);
 
 		function frame() {
 			a = a + 1;
-			if (a === 88) {
+			if (a >= 88) {
 				clearInterval(run);
 			} else {
 				setCircleOne((prev) => ++prev);
@@ -19,13 +19,13 @@ function handleCircleOne(isVisible, circleOne, setCircleOne) {
 }
 
 function handleCircleTwo(isVisible, circleTwo, setCircleTwo) {
-	if (isVisible && circleTwo !== 82) {
+	if (isVisible && circleTwo < 82) {
 		var a = 0;
 		var run = setInterval(frame, 10);
 
 		function frame() {
 			a = a + 1;
-			if (a === 82) {
+			if (a >= 82) {
 				clearInterval(run);
 			} else {
 				setCircleTwo((prev) => ++prev);
@@ -35,13 +35,13 @@ function handleCircleTwo(isVisible, circleTwo, setCircleTwo) {
 }
 
 function handleCircleThree(isVisible, circleThree, setCircleThree) {
-	if (isVisible && circleThree !== 95) {
+	if (isVisible && circleThree < 95) {
 		var a = 0;
 		var run = setInterval(frame, 10);
 
 		function frame() {
 			a = a + 1;
-			if (a === 95) {
+			if (a >= 95) {
 				clearInterval(run);
 			} else {
 				setCircleThree((prev) => ++prev);

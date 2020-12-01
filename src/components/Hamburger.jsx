@@ -14,7 +14,7 @@ function Hamburger({ clicked }) {
 				<NavLink exact to="/portfolio" activeClassName="active_class">
 					Portfolio
 				</NavLink>
-				<NavLink exact to="/articles" activeClassName="active_class">
+				<NavLink exact to="/blog" activeClassName="active_class">
 					Articles
 				</NavLink>
 				<NavLink exact to="/contact" activeClassName="active_class">

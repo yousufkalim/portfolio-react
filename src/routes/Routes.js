@@ -18,7 +18,7 @@ function PageRoutes() {
 		<Switch>
 			<Route exact path="/" component={Home} />
 			<Route exact path="/portfolio" component={Recent} />
-			<Route exact path="/articles" component={Articles} />
+			<Route exact path="/blog" component={Articles} />
 			<Route exact path="/contact" component={ContactMe} />
 			<Route exact path="/portfolio/*" component={PortfolioRoutes} />
 			<Route exact path="/blog/*" component={BlogRoutes} />

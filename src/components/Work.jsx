@@ -38,7 +38,7 @@ function Progress() {
 						<i className="fab fa-gitlab"></i>
 						<Circle
 							className="circle"
-							percent={circleOne}
+							percent={circleOne <= 88 ? circleOne : 88}
 							strokeWidth="5"
 							strokeColor="#FA225A"
 							trailWidth="0"
@@ -51,7 +51,7 @@ function Progress() {
 						<i className="fas fa-shield-alt"></i>
 						<Circle
 							className="circle"
-							percent={circleTwo}
+							percent={circleTwo <= 82 ? circleTwo : 82}
 							strokeWidth="5"
 							strokeColor="#FA225A"
 							trailWidth="0"
@@ -64,7 +64,7 @@ function Progress() {
 						<i className="far fa-gem"></i>
 						<Circle
 							className="circle"
-							percent={circleThree}
+							percent={circleThree <= 95 ? circleThree : 95}
 							strokeWidth="5"
 							strokeColor="#FA225A"
 							trailWidth="0"

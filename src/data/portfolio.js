@@ -40,8 +40,8 @@ const portfolio = [
 				<br />
 				<p>
 					You can click on “View Live Website” link and the web page
-					will open then you can check the source code of website and
-					check how clean code I did, You can also check the
+					will open then you can check the source code of the website
+					and check how clean the code I wrote, You can also check the
 					responsivness of website by using inspect element tool on
 					that page.
 				</p>
@@ -72,8 +72,8 @@ const portfolio = [
 				<br />
 				<p>
 					You can click on “View Live Website” link and the web page
-					will open then you can check the source code of website and
-					check how clean code I did, You can also check the
+					will open then you can check the source code of the website
+					and check how clean the code I wrote, You can also check the
 					responsivness of website by using inspect element tool on
 					that page.
 				</p>
@@ -104,8 +104,8 @@ const portfolio = [
 				<br />
 				<p>
 					You can click on “View Live Website” link and the web page
-					will open then you can check the source code of website and
-					check how clean code I did, You can also check the
+					will open then you can check the source code of the website
+					and check how clean the code I wrote, You can also check the
 					responsivness of website by using inspect element tool on
 					that page.
 				</p>
@@ -136,8 +136,8 @@ const portfolio = [
 				<br />
 				<p>
 					You can click on “View Live Website” link and the web page
-					will open then you can check the source code of website and
-					check how clean code I did, You can also check the
+					will open then you can check the source code of the website
+					and check how clean the code I wrote, You can also check the
 					responsivness of website by using inspect element tool on
 					that page.
 				</p>
@@ -168,8 +168,8 @@ const portfolio = [
 				<br />
 				<p>
 					You can click on “View Live Website” link and the web page
-					will open then you can check the source code of website and
-					check how clean code I did, You can also check the
+					will open then you can check the source code of the website
+					and check how clean the code I wrote, You can also check the
 					responsivness of website by using inspect element tool on
 					that page.
 				</p>
@@ -200,8 +200,8 @@ const portfolio = [
 				<br />
 				<p>
 					You can click on “View Live Website” link and the web page
-					will open then you can check the source code of website and
-					check how clean code I did, You can also check the
+					will open then you can check the source code of the website
+					and check how clean the code I wrote, You can also check the
 					responsivness of website by using inspect element tool on
 					that page.
 				</p>
