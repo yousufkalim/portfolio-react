@@ -4,6 +4,7 @@ import { Switch, Route, Redirect } from "react-router-dom";
 
 //Importing Routes
 import PortfolioRoutes from "./PortfolioRoutes";
+import BlogRoutes from "./BlogRoutes";
 
 //Pages
 import Home from "../pages/Home";
@@ -20,6 +21,7 @@ function PageRoutes() {
 			<Route exact path="/articles" component={Articles} />
 			<Route exact path="/contact" component={ContactMe} />
 			<Route exact path="/portfolio/*" component={PortfolioRoutes} />
+			<Route exact path="/blog/*" component={BlogRoutes} />
 			{/* <Redirect to="/" /> */}
 		</Switch>
 	);
