@@ -23,10 +23,24 @@
 	align-items: center;
 }
 
+/* Header Content Animation */
+.header-global-transition {
+	opacity: 0;
+	transform: translateY(50px);
+	transition: all 1s ease-in-out;
+}
+
+.header-global-true {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+/* Background Change if in Portfolio Page */
 .inPortfolio {
 	background-image: url("../images/Recent/portfoliobg.jpg") !important;
 }
 
+/* Title */
 .header-global-title {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 600;
@@ -36,6 +50,7 @@
 	padding: 29px 0;
 }
 
+/* Quote */
 .header-global-qoute {
 	font-family: "Montserrat", sans-serif;
 	color: #7a89ab;

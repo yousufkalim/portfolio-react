@@ -23,6 +23,23 @@
 	align-items: center;
 }
 
+/* Animation of Text */
+.header-title,
+.header-developer,
+.header-qoute {
+	transition: all 1s ease-in-out;
+	opacity: 0;
+	transform: translateY(50px);
+}
+
+.header-true .header-title,
+.header-true .header-developer,
+.header-true .header-qoute {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+/* title */
 .header-title {
 	font-size: 20px;
 	color: white;
@@ -32,6 +49,7 @@
 	letter-spacing: 6px;
 }
 
+/* Developer */
 .header-developer {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 600;
@@ -41,7 +59,8 @@
 	padding: 29px 0;
 }
 
-.header-qoute {
+/* Quote */
+.header-quote {
 	font-family: "Montserrat", sans-serif;
 	color: #7a89ab;
 	font-size: 14px;
