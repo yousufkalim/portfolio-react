@@ -4,6 +4,7 @@ import { Switch, Route } from "react-router-dom";
 
 //Component
 import PortfolioProject from "../pages/PortfolioProject";
+import ErrorPage from "../pages/ErrorPage";
 
 //Data
 import portfolio from "../data/portfolio";
@@ -32,6 +33,9 @@ function PortfolioRoutes() {
 					/>
 				);
 			})}
+
+			{/* 404 Route */}
+			<Route path="/portfolio/*" component={ErrorPage} />
 		</Switch>
 	);
 }

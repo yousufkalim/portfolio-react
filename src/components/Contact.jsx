@@ -68,7 +68,7 @@ function Contact({ inHome }) {
 				{inHome ? (
 					<ContactForm />
 				) : (
-					<Link to="/lets-talk" className="contact-btn-link">
+					<Link to="/contact" className="contact-btn-link">
 						<button className="contact-btn">LET'S TALK</button>
 					</Link>
 				)}

@@ -1,10 +1,15 @@
+//Init
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 
+// Data
 import blog from "../data/blog";
 
+// Components
 import Article from "../pages/Article";
+import ErrorPage from "../pages/ErrorPage";
 
+// Component
 function BlogRoutes() {
 	return (
 		<Switch>
@@ -25,6 +30,9 @@ function BlogRoutes() {
 					/>
 				);
 			})}
+
+			{/* 404 Route */}
+			<Route path="/blog/*" component={ErrorPage} />
 		</Switch>
 	);
 }
