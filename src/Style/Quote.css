@@ -57,3 +57,14 @@
 	width: 12px !important;
 	height: 12px !important;
 }
+
+/* Media Query */
+
+@media only screen and (max-width: 450px) {
+	.quote-container {
+		padding-top: 120px;
+	}
+	.single-quote {
+		width: 85%;
+	}
+}

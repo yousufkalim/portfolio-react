@@ -60,13 +60,14 @@
 .progress {
 	width: 60%;
 	margin: auto;
-	margin-top: 80px;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	position: relative;
 }
 
 .progress-block {
+	margin-top: 80px;
 	position: relative;
 }
 
@@ -91,4 +92,27 @@
 
 .circle {
 	width: 223px;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 450px) {
+	.work {
+		padding-bottom: 210px;
+	}
+	.work-heading h1 {
+		font-size: 37px;
+		line-height: 44px;
+		width: 85%;
+		margin: auto;
+	}
+	.work-heading h3 {
+		font-weight: normal;
+	}
+	.work-description {
+		width: 85%;
+	}
+	.progress {
+		/* flex-direction: column; */
+	}
 }

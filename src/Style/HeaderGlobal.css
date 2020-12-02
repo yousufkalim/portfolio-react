@@ -59,3 +59,23 @@
 	line-height: 17px;
 	letter-spacing: 5px;
 }
+
+/* Media Query */
+@media only screen and (max-width: 450px) {
+	#header-global {
+		position: static;
+		height: 30vh;
+	}
+	.header-global-container {
+		position: static;
+		background-size: cover;
+		background-position: 0 0;
+		padding: 0 4%;
+		height: 100%;
+	}
+	.header-global-title {
+		font-size: 38px;
+		line-height: 46px;
+		padding: 20px 0;
+	}
+}

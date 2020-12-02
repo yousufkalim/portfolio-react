@@ -109,3 +109,31 @@
 	color: #741d17;
 	text-align: center;
 }
+
+/* Media Query */
+@media only screen and (max-width: 450px) {
+	.contact {
+		padding: 100px 0 100px 0;
+		margin-bottom: 0;
+	}
+	.contact-heading h1 {
+		font-size: 37px;
+		line-height: 44px;
+		width: 80%;
+		margin: auto;
+	}
+	.contact-container p {
+		width: 85%;
+	}
+
+	.contact-container .contact-form {
+		width: 85%;
+	}
+	.success,
+	.error {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		line-height: 17px;
+	}
+}

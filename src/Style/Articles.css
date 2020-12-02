@@ -81,3 +81,13 @@
 	line-height: 30px;
 	font-weight: normal;
 }
+
+/* Media Query */
+@media only screen and (max-width: 450px) {
+	.articles-container {
+		margin-bottom: 0;
+	}
+	.single-article {
+		width: 85%;
+	}
+}

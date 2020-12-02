@@ -138,3 +138,45 @@ Contact Details
 .social-credentials .social-links a {
 	text-align: center;
 }
+
+/* Media Query */
+@media only screen and (max-width: 450px) {
+	/* Main  */
+	.contact-me-container {
+		width: 85%;
+		flex-direction: column;
+	}
+	/* Info */
+	.contact-info {
+		margin-bottom: 70px;
+	}
+	/* Heading */
+	.contact-info span {
+		font-size: 37px;
+		line-height: 44px;
+	}
+	/* Details */
+	.contact-details {
+		padding-bottom: 20px;
+		margin-bottom: 0;
+	}
+	/* Skew */
+	.contact-details::before {
+		top: -35px;
+		height: 70px;
+		transform: skewY(-9deg);
+	}
+	/* Container */
+	.contact-details-container {
+		width: 85%;
+		flex-direction: column;
+	}
+	/* Card */
+	.contact-details-card {
+		margin-bottom: 80px;
+	}
+	.contact-details-card h2 {
+		font-size: 37px;
+		line-height: 44px;
+	}
+}

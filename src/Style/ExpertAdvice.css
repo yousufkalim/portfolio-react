@@ -84,3 +84,13 @@
 	line-height: 30px;
 	font-weight: normal;
 }
+
+/* Media Query */
+@media only screen and (max-width: 450px) {
+	.expert-advice {
+		flex-direction: column;
+	}
+	.article {
+		margin-bottom: 20px;
+	}
+}

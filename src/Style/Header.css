@@ -68,3 +68,26 @@
 	line-height: 17px;
 	letter-spacing: 5px;
 }
+
+/* Media Query */
+
+@media only screen and (max-width: 450px) {
+	#header {
+		position: static;
+	}
+	.header-container {
+		position: static;
+		padding: 0 8%;
+	}
+
+	.header-developer {
+		font-size: 38px;
+		line-height: 46px;
+		padding: 10px 0;
+	}
+
+	.header-quote {
+		font-size: 14px;
+		line-height: 17px;
+	}
+}

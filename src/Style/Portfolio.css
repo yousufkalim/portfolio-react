@@ -46,7 +46,6 @@
 
 /* Thumbnail Style */
 .portfolio-item img {
-	object-fit: contain;
 	width: 100%;
 }
 
@@ -73,4 +72,11 @@
 	line-height: 17px;
 	letter-spacing: 4px;
 	padding: 65px 0;
+}
+
+/* Media Query */
+@media only screen and (max-width: 450px) {
+	.portfolio a {
+		width: 100%;
+	}
 }

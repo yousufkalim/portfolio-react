@@ -90,3 +90,10 @@
 .plus-posts ul li a:hover:before {
 	color: white;
 }
+
+/* Media Query */
+@media only screen and (max-width: 450px) {
+	.plus-menu {
+		display: none;
+	}
+}

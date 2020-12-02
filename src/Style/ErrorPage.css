@@ -67,3 +67,25 @@
 .error-page-links ul li a:hover {
 	color: white;
 }
+
+/* Media Query */
+@media only screen and (max-width: 450px) {
+	.error-page {
+		margin-bottom: 0;
+	}
+	.error-page h1 {
+		font-size: 37px;
+		line-height: 44px;
+		text-align: left;
+		width: 85%;
+		margin: auto;
+	}
+	.error-page h2 {
+		width: 85%;
+		text-align: left;
+	}
+	.error-page-links {
+		text-align: left;
+		width: 85%;
+	}
+}

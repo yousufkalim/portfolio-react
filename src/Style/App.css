@@ -35,3 +35,12 @@ button:hover {
 	color: #fa225a;
 	cursor: pointer;
 }
+
+/* Media Query */
+@media only screen and (max-width: 450px) {
+	/* Global Button */
+	button {
+		padding: 5px 10px;
+		font-size: 15px !important;
+	}
+}

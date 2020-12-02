@@ -123,3 +123,16 @@ nav {
 	transition: transform 0.3s;
 	text-align: center;
 }
+
+/* Media Query */
+
+@media only screen and (max-width: 450px) {
+	nav {
+		padding: 10px 5% 6px 5%;
+		position: relative;
+		background-color: rgb(29, 32, 40);
+	}
+	.nav-add-icon {
+		display: none;
+	}
+}

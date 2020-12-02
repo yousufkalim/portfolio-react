@@ -27,6 +27,7 @@
 	width: 62.2%;
 	margin: auto;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
@@ -97,4 +98,40 @@
 	font-size: 16px;
 	line-height: 30px;
 	flex-basis: 35%;
+}
+
+/* Media Query */
+@media only screen and (max-width: 450px) {
+	/* Mian */
+	.project-details {
+		padding: 100px 0 100px 0;
+	}
+
+	/* Container */
+	.project-details-container {
+		width: 85%;
+	}
+
+	/* Info Section */
+	.project-info {
+		flex-basis: 100%;
+		margin-bottom: 70px;
+	}
+
+	/* Card */
+	.project-card {
+		flex-basis: 100%;
+		padding: 30px 20px;
+	}
+
+	/* Info Heading */
+	.project-info span:first-child {
+		font-size: 37px;
+		line-height: 44px;
+	}
+
+	/* Card row */
+	.project-card table tr {
+		flex-direction: column;
+	}
 }

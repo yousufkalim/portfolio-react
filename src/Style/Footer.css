@@ -81,3 +81,18 @@ footer p {
 	visibility: visible;
 	opacity: 1;
 }
+
+/* Media Query */
+@media only screen and (max-width: 450px) {
+	footer {
+		position: static;
+		padding: 20px 0;
+	}
+	footer p {
+		width: 90%;
+		margin: 0 auto 15px auto;
+	}
+	.tooltip {
+		display: none;
+	}
+}
