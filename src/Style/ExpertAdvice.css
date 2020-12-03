@@ -94,4 +94,7 @@
 	.article {
 		margin-bottom: 20px;
 	}
+	.article a:hover .article-overlay {
+		font-size: 22px;
+	}
 }

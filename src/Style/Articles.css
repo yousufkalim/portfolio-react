@@ -97,4 +97,7 @@
 	.single-article {
 		width: 85%;
 	}
+	.single-article a:hover .single-article-overlay {
+		font-size: 22px;
+	}
 }

@@ -81,4 +81,7 @@
 	.portfolio a {
 		width: 100%;
 	}
+	.view-all-link p {
+		padding: 40px 0;
+	}
 }
