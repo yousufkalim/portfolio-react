@@ -100,6 +100,9 @@
 	.work {
 		padding-bottom: 210px;
 	}
+	.work::before {
+		transform: skewY(9deg);
+	}
 	.work-heading h1 {
 		font-size: 37px;
 		line-height: 44px;

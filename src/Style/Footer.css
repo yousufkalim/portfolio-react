@@ -7,7 +7,7 @@ footer {
 	background-color: #1d2028;
 	text-align: center;
 	padding-bottom: 60px;
-	height: 146px;
+	min-height: 146px;
 }
 
 /* Copyright text */
@@ -86,7 +86,7 @@ footer p {
 @media only screen and (max-width: 450px) {
 	footer {
 		position: static;
-		padding: 20px 0;
+		padding: 20px 0 35px 0;
 	}
 	footer p {
 		width: 90%;

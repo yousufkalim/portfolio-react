@@ -74,6 +74,7 @@
 @media only screen and (max-width: 450px) {
 	#header {
 		position: static;
+		height: 91vh;
 	}
 	.header-container {
 		position: static;

@@ -122,6 +122,11 @@
 		width: 80%;
 		margin: auto;
 	}
+	.contact-heading h3 {
+		width: 85%;
+		margin-right: auto;
+		margin-left: auto;
+	}
 	.contact-container p {
 		width: 85%;
 	}
