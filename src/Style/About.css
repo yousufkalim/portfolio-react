@@ -64,5 +64,6 @@
 	.about-container {
 		grid-template-columns: repeat(1, auto);
 		grid-row-gap: 30px;
+		width: 85%;
 	}
 }

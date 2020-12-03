@@ -6,9 +6,6 @@ import { Link } from "react-router-dom";
 import PlusMenu from "./PlusMenu";
 import Hamburger from "./Hamburger";
 
-//Gallery
-import logo from "../images/logo.png";
-
 //Style
 import "../Style/Nav.css";
 
@@ -44,7 +41,7 @@ function Nav() {
 			<nav className={scroll && "scroll"}>
 				<div className="logo-container">
 					<Link to="/">
-						<img src={logo} alt="Logo" />
+						<span>{"< YousufKalim />"}</span>
 					</Link>
 				</div>
 

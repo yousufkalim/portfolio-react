@@ -19,9 +19,19 @@ nav {
 
 /* Logo */
 
-.logo-container a img {
-	width: 206px;
+.logo-container a {
+	width: 220px;
 	height: 56px;
+	text-decoration: none;
+}
+
+.logo-container a span {
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+	font-size: 30px;
+	color: white;
+	line-height: 56px;
+	display: inline-block;
 }
 
 /* Icons */
@@ -130,7 +140,6 @@ nav {
 	nav {
 		padding: 4px 5% 0 5%;
 		position: relative;
-		/* top: 0; */
 		background-color: rgb(29, 32, 40);
 	}
 	.nav-add-icon {
