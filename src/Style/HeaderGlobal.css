@@ -61,7 +61,20 @@
 }
 
 /* Media Query */
-@media only screen and (max-width: 450px) {
+@media only screen and (min-width: 775px) and (max-width: 1100px) {
+	.header-global-container {
+		position: static;
+		background-position: 0 0;
+		padding: 0 4%;
+		height: 100%;
+	}
+	.header-global-title {
+		font-size: 70px;
+		line-height: 100px;
+	}
+}
+
+@media only screen and (max-width: 775px) {
 	#header-global {
 		position: static;
 		height: 30vh;

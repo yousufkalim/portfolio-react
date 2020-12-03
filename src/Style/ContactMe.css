@@ -140,7 +140,36 @@ Contact Details
 }
 
 /* Media Query */
-@media only screen and (max-width: 450px) {
+@media only screen and (min-width: 775px) and (max-width: 1100px) {
+	/* Main  */
+	.contact-me-container {
+		width: 92%;
+	}
+	/* Heading */
+	.contact-info span {
+		font-size: 37px;
+		line-height: 44px;
+	}
+	/* Details */
+	.contact-details {
+		padding-bottom: 20px;
+		margin-bottom: 146px;
+	}
+	/* Container */
+	.contact-details-container {
+		width: 92%;
+	}
+	/* Card */
+	.contact-details-card {
+		margin-bottom: 80px;
+	}
+	.contact-details-card h2 {
+		font-size: 37px;
+		line-height: 44px;
+	}
+}
+
+@media only screen and (max-width: 775px) {
 	/* Main  */
 	.contact-me-container {
 		width: 85%;
@@ -160,12 +189,7 @@ Contact Details
 		padding-bottom: 20px;
 		margin-bottom: 0;
 	}
-	/* Skew */
-	.contact-details::before {
-		top: -35px;
-		height: 70px;
-		transform: skewY(-9deg);
-	}
+
 	/* Container */
 	.contact-details-container {
 		width: 85%;
@@ -178,5 +202,14 @@ Contact Details
 	.contact-details-card h2 {
 		font-size: 37px;
 		line-height: 44px;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	/* Skew */
+	.contact-details::before {
+		top: -35px;
+		height: 70px;
+		transform: skewY(-9deg);
 	}
 }

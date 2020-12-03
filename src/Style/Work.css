@@ -58,11 +58,11 @@
 /* Progress */
 
 .progress {
-	width: 60%;
+	width: 80%;
 	margin: auto;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 	position: relative;
 }
 
@@ -95,13 +95,18 @@
 }
 
 /* Media Query */
+@media only screen and (min-width: 775px) and (max-width: 1100px) {
+	.work-description {
+		width: 92%;
+	}
+	.progress {
+		width: 92%;
+	}
+}
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 775px) {
 	.work {
 		padding-bottom: 210px;
-	}
-	.work::before {
-		transform: skewY(9deg);
 	}
 	.work-heading h1 {
 		font-size: 37px;
@@ -114,5 +119,11 @@
 	}
 	.work-description {
 		width: 85%;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.work::before {
+		transform: skewY(9deg);
 	}
 }

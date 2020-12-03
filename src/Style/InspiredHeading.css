@@ -44,7 +44,20 @@
 }
 
 /* Media Query */
-@media only screen and (max-width: 450px) {
+@media only screen and (min-width: 775px) and (max-width: 1100px) {
+	.inspired-heading {
+		padding: 50px;
+	}
+	.inspired-heading h1 {
+		font-size: 37px;
+		line-height: 44px;
+		width: 80%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+@media only screen and (max-width: 775px) {
 	.inspired-heading {
 		padding: 50px;
 	}

@@ -71,7 +71,15 @@
 
 /* Media Query */
 
-@media only screen and (max-width: 450px) {
+@media only screen and (min-width: 775px) and (max-width: 1100px) {
+	.header-developer {
+		font-size: 118px;
+		line-height: 142px;
+		padding: 10px 0;
+	}
+}
+
+@media only screen and (max-width: 775px) {
 	#header {
 		position: static;
 		height: 91vh;

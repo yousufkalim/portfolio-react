@@ -20,12 +20,14 @@ nav {
 /* Logo */
 
 .logo-container a {
-	width: 220px;
+	width: 225px;
 	height: 56px;
 	text-decoration: none;
 }
 
 .logo-container a span {
+	width: 225px;
+	height: 56px;
 	font-family: "Ubuntu", sans-serif;
 	font-weight: 300;
 	font-size: 30px;
@@ -136,7 +138,7 @@ nav {
 
 /* Media Query */
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 775px) {
 	nav {
 		padding: 4px 5% 0 5%;
 		position: relative;

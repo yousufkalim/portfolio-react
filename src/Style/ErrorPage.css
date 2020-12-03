@@ -69,7 +69,23 @@
 }
 
 /* Media Query */
-@media only screen and (max-width: 450px) {
+@media only screen and (min-width: 775px) and (max-width: 1100px) {
+	.error-page h1 {
+		font-size: 37px;
+		line-height: 44px;
+		text-align: center;
+		width: 100%;
+		margin: auto;
+	}
+	.error-page h2 {
+		text-align: left;
+	}
+	.error-page-links {
+		text-align: left;
+	}
+}
+
+@media only screen and (max-width: 775px) {
 	.error-page {
 		margin-bottom: 0;
 	}

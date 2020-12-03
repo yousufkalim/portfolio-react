@@ -83,7 +83,7 @@ footer p {
 }
 
 /* Media Query */
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 775px) {
 	footer {
 		position: static;
 		padding: 20px 0 35px 0;

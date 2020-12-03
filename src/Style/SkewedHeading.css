@@ -49,19 +49,22 @@
 
 /* Media Query */
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 775px) {
 	.skewed {
 		padding-bottom: 60px;
-	}
-	.skewed::before {
-		top: -35px;
-		height: 70px;
-		transform: skewY(-9deg);
 	}
 	.skewed-heading h1 {
 		font-size: 37px;
 		line-height: 44px;
 		width: 80%;
 		margin: auto;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.skewed::before {
+		top: -35px;
+		height: 70px;
+		transform: skewY(-9deg);
 	}
 }

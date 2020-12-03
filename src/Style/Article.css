@@ -215,7 +215,23 @@ aside .social-links .tooltip {
 }
 
 /* Media Query */
-@media only screen and (max-width: 450px) {
+@media only screen and (min-width: 775px) and (max-width: 1100px) {
+	.single-article-page-image h1 {
+		font-size: 43px;
+		line-height: 52px;
+	}
+	.article-content {
+		width: 85%;
+	}
+	.single-article-page-container {
+		flex-basis: 100%;
+	}
+	aside {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 775px) {
 	.single-article-page-image h1 {
 		font-size: 43px;
 		line-height: 52px;
@@ -227,13 +243,15 @@ aside .social-links .tooltip {
 		flex-basis: 100%;
 	}
 
+	aside {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 450px) {
 	.article-contact .contact::before {
 		top: -35px;
 		height: 70px;
 		transform: skewY(-9deg);
-	}
-
-	aside {
-		display: none;
 	}
 }
