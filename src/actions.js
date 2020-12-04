@@ -71,7 +71,7 @@ function handleSubmit(e, input, setSubmit, setInput) {
 	e.preventDefault();
 	axios
 		.post(
-			"https://yousufkalim-portfolio-default-rtdb.firebaseio.com/contacts.json",
+			"https://portfolio-dev-914ec-default-rtdb.firebaseio.com/contacts.json",
 			input
 		)
 		.then(() => {
