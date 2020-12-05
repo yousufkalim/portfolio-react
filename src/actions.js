@@ -70,10 +70,7 @@ function handleInput(e, setInput) {
 function handleSubmit(e, input, setSubmit, setInput) {
 	e.preventDefault();
 	axios
-		.post(
-			"https://portfolio-dev-914ec-default-rtdb.firebaseio.com/contacts.json",
-			input
-		)
+		.post("/contact", { data: input })
 		.then(() => {
 			setSubmit(
 				<span className="success">

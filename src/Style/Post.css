@@ -1,0 +1,22 @@
+.post {
+	background-color: white;
+	height: 100vh;
+}
+
+.post form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 10vh;
+	width: 400px;
+	margin: auto;
+}
+
+.post form input,
+.post form textarea {
+	margin: 20px 0;
+	width: 100%;
+	padding: 10px;
+	font-size: 1.2rem;
+}
