@@ -1,9 +1,10 @@
 //Init
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 //Importing Data
-import blog from "../data/blog";
+// import blog from "../data/blog";
 
 //importing Components
 import Nav from "../components/Nav";
@@ -15,6 +16,14 @@ import "../Style/Articles.css";
 
 //Article Page Component
 function Articles() {
+	let [blog, setBlog] = useState([]);
+
+	useEffect(() => {
+		axios.get("/blog").then((res) => {
+			setBlog([...res.data]);
+		});
+	}, []);
+
 	return (
 		<React.Fragment>
 			<Nav />
@@ -44,7 +53,7 @@ function Articles() {
 								<Link to={article.link}>
 									<h2>{article.title}</h2>
 								</Link>
-								<p>{article.metaDescription}</p>
+								<p>{article.description}</p>
 							</div>
 						</div>
 					);

@@ -1,6 +1,7 @@
 //Init
 import React from "react";
 import { Link } from "react-router-dom";
+import ReactHTMLParser from "react-html-parser";
 
 //Data
 import { about } from "../data/home";
@@ -33,7 +34,7 @@ function Article({ image, title, blog, date }) {
 				<div className="article-content">
 					{/* Article */}
 					<div className="single-article-page-container">
-						{blog}
+						{ReactHTMLParser(blog)}
 						<i style={{ marginTop: "40px", display: "block" }}>
 							Published: {date}
 						</i>

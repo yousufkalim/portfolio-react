@@ -1,9 +1,7 @@
 //Init
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Switch, Route } from "react-router-dom";
-
-// Data
-import blog from "../data/blog";
+import axios from "axios";
 
 // Components
 import Article from "../pages/Article";
@@ -11,6 +9,14 @@ import ErrorPage from "../pages/ErrorPage";
 
 // Component
 function BlogRoutes() {
+	let [blog, setBlog] = useState([]);
+
+	useEffect(() => {
+		axios.get("/blog").then((res) => {
+			setBlog([...res.data]);
+		});
+	}, []);
+
 	return (
 		<Switch>
 			{blog.map((article, index) => {
@@ -24,7 +30,6 @@ function BlogRoutes() {
 								image={article.image}
 								title={article.title}
 								blog={article.blog}
-								date={article.dateCreated}
 							/>
 						)}
 					/>
@@ -32,7 +37,7 @@ function BlogRoutes() {
 			})}
 
 			{/* 404 Route */}
-			<Route path="/blog/*" component={ErrorPage} />
+			{/* <Route path="/blog/*" component={ErrorPage} /> */}
 		</Switch>
 	);
 }
