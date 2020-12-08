@@ -1,9 +1,7 @@
 //Init
-import React from "react";
+import React, { useState, useEffect } from "react";
 import quoteImage from "../images/Home/quote.png";
-
-//Importing Quote Data
-import quotes from "../data/quotes";
+import axios from "axios";
 
 //Modules
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
@@ -27,6 +25,17 @@ function SingleQuote({ quote, author }) {
 
 //Quote Component
 function Quote({ inHome }) {
+	//initializing state
+	let [quotes, setQuotes] = useState([]);
+
+	//Getting data from database
+	useEffect(() => {
+		axios.get("/quotes").then((res) => {
+			setQuotes([...res.data]);
+		});
+	}, []);
+
+	//Rendering Component
 	return (
 		<section className="quote">
 			<div

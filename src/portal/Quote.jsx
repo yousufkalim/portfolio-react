@@ -29,7 +29,7 @@ function Quote() {
 
 		axios
 			.post("/quotes", quote)
-			.then((res) => {
+			.then(() => {
 				setSubmit(
 					<span className="success">
 						Quote posted successfully...
