@@ -1,0 +1,71 @@
+/* Main */
+.portal-portfolio {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	margin-top: 65px;
+}
+
+/* Form */
+.portal-portfolio form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 40%;
+	margin: auto;
+}
+
+/* Heading */
+.portal-portfolio form h2 {
+	width: 100%;
+	font-family: "Montserrat", sans-serif;
+	font-weight: normal;
+	letter-spacing: 1px;
+	color: white;
+	text-align: left;
+}
+
+/* Image Upload Content */
+.portal-thumbnail .file-custom::after {
+	content: "Choose a thumbnail image" !important;
+}
+
+.portal-cover .file-custom::after {
+	content: "Choose a cover image" !important;
+}
+
+/* Inputs */
+.portal-portfolio form input {
+	height: 60px;
+	width: 100%;
+	border: none;
+	border-radius: 2px;
+	outline: none;
+	padding: 16px 16px;
+	font-size: 20px;
+	font-family: "Source Sans Pro", sans-serif;
+	color: #555c6e;
+	font-weight: normal;
+	transition: all 0.3s;
+	margin: 10px 0;
+}
+
+/* Text Area */
+.portal-portfolio form textarea {
+	width: 100%;
+	border: none;
+	border-radius: 2px;
+	outline: none;
+	padding: 16px 16px;
+	font-size: 16px;
+	font-family: "Source Sans Pro", sans-serif;
+	color: #555c6e;
+	font-weight: normal;
+	resize: none;
+	margin: 10px 0 20px 0;
+}
+
+.portal-portfolio form input:focus {
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
