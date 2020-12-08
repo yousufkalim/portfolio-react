@@ -19,6 +19,7 @@ function Article() {
 		description: "",
 		blog: "",
 	});
+	let [submit, setSubmit] = useState("");
 
 	//Handle Image Input
 	const handleImage = (e) => {
@@ -52,6 +53,11 @@ function Article() {
 		axios
 			.post("/blog", formData)
 			.then(() => {
+				setSubmit(
+					<span className="success">
+						Article posted successfully...
+					</span>
+				);
 				setBlog({
 					image: "",
 					title: "",
@@ -59,7 +65,11 @@ function Article() {
 					blog: "",
 				});
 			})
-			.catch((err) => console.log(err));
+			.catch(() => {
+				setSubmit(
+					<span className="error">Opps an error accured...</span>
+				);
+			});
 	};
 
 	// Return Component
@@ -78,6 +88,7 @@ function Article() {
 							id="file"
 							aria-label="File browser example"
 							onChange={handleImage}
+							required
 						/>
 						<span class="file-custom"></span>
 					</label>
@@ -88,6 +99,7 @@ function Article() {
 						placeholder="Title"
 						value={blog.title}
 						onChange={handleInput}
+						required
 					/>
 					<textarea
 						name="description"
@@ -121,7 +133,8 @@ function Article() {
 							}}
 						/>
 					</div>
-					<button type="submit">Publish</button>
+
+					{submit ? submit : <button type="submit">Publish</button>}
 				</form>
 			</div>
 		</>

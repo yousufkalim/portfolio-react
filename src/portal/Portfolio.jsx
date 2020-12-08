@@ -53,7 +53,7 @@ function Portfolio() {
 			.then(() => {
 				setSubmit(
 					<span className="success">
-						Got it, I'll contact you shortly, Thanks
+						Portfolio added successfully...
 					</span>
 				);
 				setPortfolio({
@@ -68,14 +68,17 @@ function Portfolio() {
 					description: "",
 				});
 			})
-			.catch((err) => {
-				setSubmit(<span className="error">Opps an error accured</span>);
+			.catch(() => {
+				setSubmit(
+					<span className="error">Opps an error accured...</span>
+				);
 			});
 	};
 
 	//Rendering Component
 	return (
 		<>
+			{/* Navbar */}
 			<Nav />
 
 			{/* Portfolio Form */}
@@ -88,6 +91,7 @@ function Portfolio() {
 						placeholder="Title"
 						value={portfolio.title}
 						onChange={handleInput}
+						required
 					/>
 					<input
 						type="text"
@@ -95,6 +99,7 @@ function Portfolio() {
 						placeholder="Heading"
 						value={portfolio.heading}
 						onChange={handleInput}
+						required
 					/>
 					<label class="file portal-thumbnail">
 						<input
@@ -103,6 +108,7 @@ function Portfolio() {
 							name="thumbnail"
 							aria-label="File browser example"
 							onChange={handleInput}
+							required
 						/>
 						<span class="file-custom"></span>
 					</label>
@@ -113,6 +119,7 @@ function Portfolio() {
 							name="cover"
 							aria-label="File browser example"
 							onChange={handleInput}
+							required
 						/>
 						<span class="file-custom"></span>
 					</label>
@@ -122,6 +129,7 @@ function Portfolio() {
 						placeholder="Skills"
 						value={portfolio.skills}
 						onChange={handleInput}
+						required
 					/>
 					<input
 						type="text"
@@ -129,6 +137,7 @@ function Portfolio() {
 						placeholder="Category"
 						value={portfolio.category}
 						onChange={handleInput}
+						required
 					/>
 					<input
 						type="text"
@@ -136,6 +145,7 @@ function Portfolio() {
 						placeholder="Copyright"
 						value={portfolio.copyright}
 						onChange={handleInput}
+						required
 					/>
 					<input
 						type="text"
@@ -143,6 +153,7 @@ function Portfolio() {
 						placeholder="Website URL"
 						value={portfolio.weburl}
 						onChange={handleInput}
+						required
 					/>
 					<textarea
 						name="description"
@@ -150,14 +161,17 @@ function Portfolio() {
 						rows="6"
 						placeholder="Description"
 						onChange={handleInput}
+						required
 					>
 						{portfolio.description}
 					</textarea>
-					{<button type="submit">Publish</button>}
+
+					{submit ? submit : <button type="submit">Publish</button>}
 				</form>
 			</div>
 		</>
 	);
 }
 
+//Export
 export default Portfolio;
