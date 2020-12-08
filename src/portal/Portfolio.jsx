@@ -162,9 +162,8 @@ function Portfolio() {
 						placeholder="Description"
 						onChange={handleInput}
 						required
-					>
-						{portfolio.description}
-					</textarea>
+						value={portfolio.description}
+					></textarea>
 
 					{submit ? submit : <button type="submit">Publish</button>}
 				</form>

@@ -107,9 +107,8 @@ function Article() {
 						rows="3"
 						placeholder="Description"
 						onChange={handleInput}
-					>
-						{blog.description}
-					</textarea>
+						value={blog.description}
+					></textarea>
 
 					{/* Ck Editor */}
 					<div className="post-editor">
