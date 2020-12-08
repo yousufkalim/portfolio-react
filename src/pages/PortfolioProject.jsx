@@ -16,7 +16,7 @@ function PortfolioProject({
 	skills,
 	category,
 	copyright,
-	webLink,
+	weburl,
 	heading,
 	description,
 }) {
@@ -52,7 +52,7 @@ function PortfolioProject({
 									<td>{copyright}</td>
 								</tr>
 							</table>
-							<a href={webLink}>
+							<a href={weburl} target="_blank" rel="noreferrer">
 								<button>VIEW LIVE WEBSITE</button>
 							</a>
 						</div>

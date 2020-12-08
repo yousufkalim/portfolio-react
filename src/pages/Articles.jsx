@@ -16,14 +16,17 @@ import "../Style/Articles.css";
 
 //Article Page Component
 function Articles() {
+	//Initializing State
 	let [blog, setBlog] = useState([]);
 
+	//Getting data from database
 	useEffect(() => {
 		axios.get("/blog").then((res) => {
 			setBlog([...res.data]);
 		});
 	}, []);
 
+	//Rendering Component
 	return (
 		<React.Fragment>
 			<Nav />

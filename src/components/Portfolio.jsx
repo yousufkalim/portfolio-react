@@ -1,9 +1,7 @@
 //Init
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-
-//Data Importing
-import portfolio from "../data/portfolio";
+import axios from "axios";
 
 //Style
 import "../Style/Portfolio.css";
@@ -34,6 +32,17 @@ function ViewAll() {
 
 //Portfolio Component
 function Portfolio({ inHome }) {
+	//Initializing State
+	let [portfolio, setPortfolio] = useState([]);
+
+	//Getting data from database
+	useEffect(() => {
+		axios.get("/portfolio").then((res) => {
+			setPortfolio([...res.data]);
+		});
+	}, []);
+
+	//Rendering Component
 	return (
 		<React.Fragment>
 			<div className="portfolio">

@@ -1,16 +1,24 @@
 //Init
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Switch, Route } from "react-router-dom";
+import axios from "axios";
 
 //Component
 import PortfolioProject from "../pages/PortfolioProject";
 import ErrorPage from "../pages/ErrorPage";
 
-//Data
-import portfolio from "../data/portfolio";
-
 //Routing
 function PortfolioRoutes() {
+	//Initializing State
+	let [portfolio, setPortfolio] = useState([]);
+
+	//Getting data from database
+	useEffect(() => {
+		axios.get("/portfolio").then((res) => {
+			setPortfolio([...res.data]);
+		});
+	}, []);
+
 	return (
 		<Switch>
 			{portfolio.map((item, index) => {
@@ -25,7 +33,7 @@ function PortfolioRoutes() {
 								skills={item.skills}
 								category={item.category}
 								copyright={item.copyright}
-								webLink={item.webLink}
+								weburl={item.weburl}
 								heading={item.heading}
 								description={item.description}
 							/>

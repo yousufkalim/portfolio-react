@@ -15,7 +15,7 @@ function Portal() {
 					<Link to="/portal">Home</Link>
 					<Link to="/portal/portfolio">Portfolio</Link>
 					<Link to="/portal/article">Article</Link>
-					<Link to="/portal/contact">Contact</Link>
+					<Link to="/portal/quote">Quote</Link>
 				</div>
 			</div>
 		</>
