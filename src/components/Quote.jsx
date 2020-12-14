@@ -32,7 +32,7 @@ function Quote({ inHome }) {
 	useEffect(() => {
 		axios.get("/quotes").then((res) => {
 			setQuotes([...res.data]);
-		});
+		}).catch(err => err)
 	}, []);
 
 	//Rendering Component

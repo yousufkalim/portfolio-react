@@ -39,7 +39,7 @@ function Portfolio({ inHome }) {
 	useEffect(() => {
 		axios.get("/portfolio").then((res) => {
 			setPortfolio([...res.data]);
-		});
+		}).catch(err => err)
 	}, []);
 
 	//Rendering Component
