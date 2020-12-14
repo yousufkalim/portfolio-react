@@ -1,7 +1,9 @@
 //Init
 import React, { useEffect, useState } from "react";
 import { Switch, Route } from "react-router-dom";
-import axios from "axios";
+
+//Fetch Data
+import fetch from "../controllers/dataFetch";
 
 // Components
 import Article from "../pages/Article";
@@ -12,9 +14,7 @@ function BlogRoutes() {
 	let [blog, setBlog] = useState([]);
 
 	useEffect(() => {
-		axios.get("/blog").then((res) => {
-			setBlog([...res.data]);
-		});
+		fetch("articles", setBlog);
 	}, []);
 
 	return (

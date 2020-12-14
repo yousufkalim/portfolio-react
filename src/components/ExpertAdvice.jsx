@@ -1,9 +1,9 @@
 //Init
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 //Article Data
-import blog from "../data/blog";
+import fetch from "../controllers/dataFetch";
 
 //Style
 import "../Style/ExpertAdvice.css";
@@ -30,9 +30,16 @@ function Article({ link, image, title, metaDescription }) {
 
 //Expert Advice Container
 function ExpertAdvice() {
+	//Intiializing State
+	let [articles, setArticles] = useState([]);
+
+	useEffect(() => {
+		fetch("articles", setArticles);
+	}, []);
+
 	return (
 		<section className="expert-advice">
-			{blog.map((article, index) => {
+			{articles.slice(0, 3).map((article, index) => {
 				return (
 					<Article
 						key={index}

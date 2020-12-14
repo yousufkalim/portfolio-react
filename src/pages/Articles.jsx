@@ -1,10 +1,7 @@
 //Init
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import axios from "axios";
-
-//Importing Data
-// import blog from "../data/blog";
+import fetch from "../controllers/dataFetch";
 
 //importing Components
 import Nav from "../components/Nav";
@@ -21,9 +18,7 @@ function Articles() {
 
 	//Getting data from database
 	useEffect(() => {
-		axios.get("/blog").then((res) => {
-			setBlog([...res.data]);
-		});
+		fetch("articles", setBlog);
 	}, []);
 
 	//Rendering Component
