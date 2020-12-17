@@ -10,7 +10,7 @@ function fetch(collectionName, setData) {
 		.get()
 		.then((res) => {
 			res.docs.map((data) => {
-				setData((prev) => {
+				return setData((prev) => {
 					return [...prev, data.data()];
 				});
 			});

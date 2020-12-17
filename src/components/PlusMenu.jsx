@@ -1,20 +1,25 @@
 //init
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 //Data
-import portfolio from "../data/portfolio";
-import blog from "../data/blog";
+import fetch from "../controllers/dataFetch";
 
 //Style
 import "../Style/PlusMenu.css";
 
 //Recent Projects
 function RecentProjects() {
+	let [portfolio, setPortfolio] = useState([]);
+
+	useEffect(() => {
+		fetch("portfolios", setPortfolio);
+	}, []);
+
 	return (
 		<div className="plus-recent">
 			<h3 className="plus-heading">RECENT WORKS</h3>
-			{portfolio.map((item) => {
+			{portfolio.slice(0, 6).map((item) => {
 				return (
 					<a href={item.link}>
 						<img src={item.thumbnail} alt="Portfolio Item" />
@@ -27,6 +32,12 @@ function RecentProjects() {
 
 //Component
 function PlusMenu({ clicked, setClicked }) {
+	let [blog, setBlog] = useState([]);
+
+	useEffect(() => {
+		fetch("articles", setBlog);
+	}, []);
+
 	return (
 		<div className="plus-menu" style={clicked ? { width: "300px" } : null}>
 			<div className="plus-menu-container">
@@ -53,15 +64,13 @@ function PlusMenu({ clicked, setClicked }) {
 				<div className="plus-posts">
 					<h3 className="plus-heading">RECENT POSTS</h3>
 					<ul type="">
-						<li>
-							<Link to={blog[0].link}>{blog[0].title}</Link>
-						</li>
-						<li>
-							<Link to={blog[1].link}>{blog[1].title}</Link>
-						</li>
-						<li>
-							<Link to={blog[2].link}>{blog[2].title}</Link>
-						</li>
+						{blog.slice(0, 3).map((item, index) => {
+							return (
+								<li>
+									<Link to={item.link}>{item.title}</Link>
+								</li>
+							);
+						})}
 					</ul>
 				</div>
 			</div>
