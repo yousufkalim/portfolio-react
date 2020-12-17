@@ -50,7 +50,7 @@ Blog
 
 .article-content {
 	position: relative;
-	width: 65%;
+	width: 80%;
 	margin: auto;
 	display: flex;
 	justify-content: space-between;
@@ -60,6 +60,7 @@ Blog
 /* Container */
 .single-article-page-container {
 	flex-basis: 57%;
+	max-width: 705px;
 	margin: auto;
 	font-family: "Source Sans Pro", sans-serif;
 	color: #7a89ab;
@@ -149,6 +150,7 @@ Aside
 /* Main */
 aside {
 	flex-basis: 32%;
+	max-width: 395px;
 }
 
 /* Container */
@@ -215,7 +217,7 @@ aside .social-links .tooltip {
 }
 
 /* Media Query */
-@media only screen and (min-width: 775px) and (max-width: 1100px) {
+@media only screen and (min-width: 775px) and (max-width: 1300px) {
 	.single-article-page-image h1 {
 		font-size: 43px;
 		line-height: 52px;

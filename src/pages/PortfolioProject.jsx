@@ -1,5 +1,6 @@
 //Init
 import React from "react";
+import ReactHTMLParser from "react-html-parser";
 
 //Importing Components
 import Nav from "../components/Nav";
@@ -35,7 +36,7 @@ function PortfolioProject({
 					<div className="project-details-container">
 						<div className="project-info">
 							<span>{heading}</span>
-							<div>{description}</div>
+							<div>{ReactHTMLParser(description)}</div>
 						</div>
 						<div className="project-card">
 							<table>

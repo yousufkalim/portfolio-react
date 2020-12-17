@@ -24,7 +24,7 @@
 }
 
 .project-details-container {
-	width: 62.2%;
+	width: 80%;
 	margin: auto;
 	display: flex;
 	flex-wrap: wrap;
@@ -65,6 +65,7 @@
 /* Project Card */
 .project-card {
 	flex-basis: 49%;
+	max-width: 579px;
 	background-color: #1a1d24;
 	border: 1px solid #2e313a;
 	padding: 50px 30px;

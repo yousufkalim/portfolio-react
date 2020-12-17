@@ -69,7 +69,7 @@
 }
 
 /* Media Query */
-@media only screen and (min-width: 775px) and (max-width: 1100px) {
+@media only screen and (min-width: 775px) and (max-width: 1300px) {
 	.error-page h1 {
 		font-size: 37px;
 		line-height: 44px;

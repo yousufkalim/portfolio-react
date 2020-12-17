@@ -140,7 +140,7 @@ Contact Details
 }
 
 /* Media Query */
-@media only screen and (min-width: 775px) and (max-width: 1100px) {
+@media only screen and (min-width: 775px) and (max-width: 1300px) {
 	/* Main  */
 	.contact-me-container {
 		width: 92%;

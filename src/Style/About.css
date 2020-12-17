@@ -51,7 +51,7 @@
 
 /* Media Query */
 
-@media only screen and (min-width: 775px) and (max-width: 1100px) {
+@media only screen and (min-width: 775px) and (max-width: 1300px) {
 	.about-container {
 		grid-template-columns: repeat(2, auto);
 		grid-row-gap: 30px;
