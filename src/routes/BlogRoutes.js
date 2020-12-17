@@ -7,7 +7,6 @@ import fetch from "../controllers/dataFetch";
 
 // Components
 import Article from "../pages/Article";
-import ErrorPage from "../pages/ErrorPage";
 
 // Component
 function BlogRoutes() {
@@ -36,9 +35,6 @@ function BlogRoutes() {
 					/>
 				);
 			})}
-
-			{/* 404 Route */}
-			{/* <Route path="/blog/*" component={ErrorPage} /> */}
 		</Switch>
 	);
 }

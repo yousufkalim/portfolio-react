@@ -23,7 +23,7 @@ function PageRoutes() {
 			<Route exact path="/blog" component={Articles} />
 			<Route exact path="/blog/*" component={BlogRoutes} />
 			<Route exact path="/contact" component={ContactMe} />
-			<Route exact path="/*" component={ErrorPage} />
+			<Route component={ErrorPage} />
 		</Switch>
 	);
 }

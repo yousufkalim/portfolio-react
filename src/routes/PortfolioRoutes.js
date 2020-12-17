@@ -5,7 +5,6 @@ import fetch from "../controllers/dataFetch";
 
 //Component
 import PortfolioProject from "../pages/PortfolioProject";
-import ErrorPage from "../pages/ErrorPage";
 
 //Routing
 function PortfolioRoutes() {
@@ -39,9 +38,6 @@ function PortfolioRoutes() {
 					/>
 				);
 			})}
-
-			{/* 404 Route */}
-			<Route path="/portfolio/*" component={ErrorPage} />
 		</Switch>
 	);
 }
