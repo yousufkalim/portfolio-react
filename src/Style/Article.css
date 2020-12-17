@@ -68,7 +68,6 @@ Blog
 
 /* Heading */
 .single-article-page-container h3 {
-	margin: 20px 0;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 400;
 	font-size: 30px;
@@ -84,39 +83,38 @@ Blog
 
 /* Paragraph */
 .single-article-page-container p {
-	margin: 15px 0;
 	font-size: 16px;
 	line-height: 30px;
 }
 
 /* Blog Image */
-.blog-img {
+figure[class*="image"] {
 	margin: 40px 0;
 	position: relative;
-	width: 100%;
+	width: 120%;
 	left: 50%;
 	transform: translateX(-50%);
 	overflow: hidden;
 }
 
-.blog-img img {
+figure[class*="image"] img {
 	object-fit: contain;
 	width: 100%;
 	height: 100%;
 	transition: all 1s ease-in-out;
 }
 
-.blog-img:hover img {
+figure[class*="image"]:hover img {
 	transform: scale(1.1);
 }
 
-/* Span */
-.single-article-page-container span {
+/* Blockquote */
+.single-article-page-container blockquote {
 	width: 87%;
 	background-color: #1a1d24;
 	border-left: 4px solid white;
 	display: block;
-	margin: 30px auto;
+	margin: auto;
 	padding: 10px;
 	line-height: 30px;
 }
