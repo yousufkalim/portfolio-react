@@ -2,7 +2,7 @@
 import React from "react";
 
 //Style
-import "../Style/About.css";
+import "../style/About.css";
 
 //Component
 function About({ columnOne, columnTwo }) {

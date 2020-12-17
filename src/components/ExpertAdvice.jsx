@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import fetch from "../controllers/dataFetch";
 
 //Style
-import "../Style/ExpertAdvice.css";
+import "../style/ExpertAdvice.css";
 
 //Single Article Container
 function Article({ link, image, title, description }) {

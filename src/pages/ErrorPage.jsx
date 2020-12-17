@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 //Style
-import "../Style/ErrorPage.css";
+import "../style/ErrorPage.css";
 
 //Components
 import Nav from "../components/Nav";

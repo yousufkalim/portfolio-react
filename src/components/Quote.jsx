@@ -1,6 +1,6 @@
 //Init
 import React, { useState, useEffect } from "react";
-import quoteImage from "../images/Home/quote.png";
+import quoteImage from "../images/home/quote.png";
 import fetch from "../controllers/dataFetch";
 
 //Modules
@@ -8,7 +8,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 
 //Style
-import "../Style/Quote.css";
+import "../style/Quote.css";
 
 //Single Quote Component
 function SingleQuote({ quote, author }) {

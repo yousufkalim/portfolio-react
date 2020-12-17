@@ -16,7 +16,7 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
 //Style
-import "../Style/Article.css";
+import "../style/Article.css";
 
 //Component
 function Article({ image, title, blog, date }) {

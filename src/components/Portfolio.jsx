@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import fetch from "../controllers/dataFetch";
 
 //Style
-import "../Style/Portfolio.css";
+import "../style/Portfolio.css";
 
 //Portfolio Items Component
 function PortfolioItems({ title, link, thumbnail, inHome }) {

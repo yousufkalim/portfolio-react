@@ -9,7 +9,7 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
 //Style
-import "../Style/PortfolioProject.css";
+import "../style/PortfolioProject.css";
 
 //Component
 function PortfolioProject({

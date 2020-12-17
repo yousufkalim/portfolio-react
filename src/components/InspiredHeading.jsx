@@ -6,7 +6,7 @@ import VisibilitySensor from "react-visibility-sensor";
 import { inspiredHeading } from "../data/recent";
 
 //Style
-import "../Style/InspiredHeading.css";
+import "../style/InspiredHeading.css";
 
 //Component
 function InspiredHeading() {

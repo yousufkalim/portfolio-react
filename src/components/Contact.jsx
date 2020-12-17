@@ -9,7 +9,7 @@ import contact from "../data/contact";
 import { handleInput, handleSubmit } from "../controllers/contact";
 
 //Style
-import "../Style/Contact.css";
+import "../style/Contact.css";
 
 //Form Component
 function ContactForm() {

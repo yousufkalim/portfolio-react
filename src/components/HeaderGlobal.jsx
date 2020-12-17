@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 
 //Style
-import "../Style/HeaderGlobal.css";
+import "../style/HeaderGlobal.css";
 
 //Component
 function HeaderGlobal({ inPortfolio, title, quote }) {

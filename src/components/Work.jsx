@@ -13,7 +13,7 @@ import {
 } from "../controllers/work";
 
 //Style
-import "../Style/Work.css";
+import "../style/Work.css";
 
 //Progress Component
 function Progress() {

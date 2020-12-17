@@ -5,7 +5,7 @@ import React, { useState, useEffect } from "react";
 import footer from "../data/footer";
 
 //Style
-import "../Style/Footer.css";
+import "../style/Footer.css";
 
 //Social Links
 function SocialLinks() {

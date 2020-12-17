@@ -7,7 +7,7 @@ import PlusMenu from "./PlusMenu";
 import Hamburger from "./Hamburger";
 
 //Style
-import "../Style/Nav.css";
+import "../style/Nav.css";
 
 function Nav() {
 	//Initialinzing Scroll State

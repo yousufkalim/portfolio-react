@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import fetch from "../controllers/dataFetch";
 
 //Style
-import "../Style/PlusMenu.css";
+import "../style/PlusMenu.css";
 
 //Recent Projects
 function RecentProjects() {

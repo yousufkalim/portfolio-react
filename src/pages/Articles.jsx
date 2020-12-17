@@ -9,7 +9,7 @@ import HeaderGlobal from "../components/HeaderGlobal";
 import Footer from "../components/Footer";
 
 //Style
-import "../Style/Articles.css";
+import "../style/Articles.css";
 
 //Article Page Component
 function Articles() {

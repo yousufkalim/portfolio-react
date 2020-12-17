@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 
 //Style
-import "../Style/Header.css";
+import "../style/Header.css";
 
 //Component
 function Header({ heading, title, quote }) {

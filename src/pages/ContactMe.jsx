@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import contactMe from "../data/contactMe";
 
 //Style
-import "../Style/ContactMe.css";
+import "../style/ContactMe.css";
 
 //Components
 import Nav from "../components/Nav";

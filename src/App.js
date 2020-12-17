@@ -5,7 +5,7 @@ import React from "react";
 import Routes from "./routes/Routes";
 
 //Styles
-import "./Style/App.css";
+import "./style/App.css";
 
 //Component
 function App() {

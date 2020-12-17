@@ -2,7 +2,7 @@
 import React from "react";
 
 //Style
-import "../Style/SkewedHeading.css";
+import "../style/SkewedHeading.css";
 
 //Component to Render
 function SkewedHeading({ bgClass, title, tagline }) {

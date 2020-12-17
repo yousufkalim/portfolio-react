@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 //Style
-import "../Style/Hamburger.css";
+import "../style/Hamburger.css";
 
 function Hamburger({ clicked }) {
 	return (
