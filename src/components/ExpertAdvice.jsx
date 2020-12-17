@@ -9,7 +9,7 @@ import fetch from "../controllers/dataFetch";
 import "../Style/ExpertAdvice.css";
 
 //Single Article Container
-function Article({ link, image, title, metaDescription }) {
+function Article({ link, image, title, description }) {
 	return (
 		<div className="article">
 			<Link to={link}>
@@ -22,7 +22,7 @@ function Article({ link, image, title, metaDescription }) {
 				<Link to={link}>
 					<h2>{title}</h2>
 				</Link>
-				<p>{metaDescription}</p>
+				<p>{description}</p>
 			</div>
 		</div>
 	);
@@ -46,7 +46,7 @@ function ExpertAdvice() {
 						link={article.link}
 						image={article.image}
 						title={article.title}
-						metaDescription={article.metaDescription}
+						description={article.description}
 					/>
 				);
 			})}

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import contact from "../data/contact";
 
 //Actions
-import { handleInput, handleSubmit } from "../actions";
+import { handleInput, handleSubmit } from "../controllers/contact";
 
 //Style
 import "../Style/Contact.css";
@@ -15,11 +15,16 @@ import "../Style/Contact.css";
 function ContactForm() {
 	//Initializing States
 	let [input, setInput] = useState({ name: "", email: "", phone: "" });
+	let [loading, setLoading] = useState(false);
 	let [submit, setSubmit] = useState("");
 
 	return (
 		<div className="contact-form">
-			<form onSubmit={(e) => handleSubmit(e, input, setSubmit, setInput)}>
+			<form
+				onSubmit={(e) =>
+					handleSubmit(e, input, setSubmit, setInput, setLoading)
+				}
+			>
 				<input
 					type="text"
 					name="name"
@@ -44,7 +49,14 @@ function ContactForm() {
 					onChange={(e) => handleInput(e, setInput)}
 					required
 				/>
-				{submit ? submit : <button type="submit">LET'S TALK</button>}
+				{submit ? (
+					submit
+				) : (
+					<button type="submit" disabled={loading}>
+						{loading && <i className="fa fa-refresh fa-spin" />}
+						&nbsp;LET'S TALK
+					</button>
+				)}
 			</form>
 		</div>
 	);

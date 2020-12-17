@@ -1,7 +1,7 @@
 //Init
 import React, { useState, useEffect } from "react";
 import quoteImage from "../images/Home/quote.png";
-import axios from "axios";
+import fetch from "../controllers/dataFetch";
 
 //Modules
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
@@ -30,9 +30,7 @@ function Quote({ inHome }) {
 
 	//Getting data from database
 	useEffect(() => {
-		axios.get("/quotes").then((res) => {
-			setQuotes([...res.data]);
-		}).catch(err => err)
+		fetch("quotes", setQuotes);
 	}, []);
 
 	//Rendering Component

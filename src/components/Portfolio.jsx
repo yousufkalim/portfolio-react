@@ -1,7 +1,7 @@
 //Init
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import axios from "axios";
+import fetch from "../controllers/dataFetch";
 
 //Style
 import "../Style/Portfolio.css";
@@ -37,26 +37,36 @@ function Portfolio({ inHome }) {
 
 	//Getting data from database
 	useEffect(() => {
-		axios.get("/portfolio").then((res) => {
-			setPortfolio([...res.data]);
-		}).catch(err => err)
+		fetch("portfolios", setPortfolio);
 	}, []);
 
 	//Rendering Component
 	return (
 		<React.Fragment>
 			<div className="portfolio">
-				{portfolio.map((item, index) => {
-					return (
-						<PortfolioItems
-							key={index}
-							title={item.title}
-							link={item.link}
-							thumbnail={item.thumbnail}
-							inHome={inHome}
-						/>
-					);
-				})}
+				{inHome
+					? portfolio.slice(0, 6).map((item, index) => {
+							return (
+								<PortfolioItems
+									key={index}
+									title={item.title}
+									link={item.link}
+									thumbnail={item.thumbnail}
+									inHome={inHome}
+								/>
+							);
+					  })
+					: portfolio.map((item, index) => {
+							return (
+								<PortfolioItems
+									key={index}
+									title={item.title}
+									link={item.link}
+									thumbnail={item.thumbnail}
+									inHome={inHome}
+								/>
+							);
+					  })}
 			</div>
 
 			{inHome ? <ViewAll /> : null}

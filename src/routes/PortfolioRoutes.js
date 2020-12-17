@@ -1,7 +1,7 @@
 //Init
 import React, { useState, useEffect } from "react";
 import { Switch, Route } from "react-router-dom";
-import axios from "axios";
+import fetch from "../controllers/dataFetch";
 
 //Component
 import PortfolioProject from "../pages/PortfolioProject";
@@ -14,9 +14,7 @@ function PortfolioRoutes() {
 
 	//Getting data from database
 	useEffect(() => {
-		axios.get("/portfolio").then((res) => {
-			setPortfolio([...res.data]);
-		});
+		fetch("portfolios", setPortfolio);
 	}, []);
 
 	return (

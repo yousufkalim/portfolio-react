@@ -15,6 +15,7 @@ body {
 button {
 	height: 60px;
 	width: 100%;
+	max-width: 579px;
 	border: none;
 	border-radius: 2px;
 	outline: none;
@@ -33,6 +34,17 @@ button:hover {
 	background-color: white;
 	color: #fa225a;
 	cursor: pointer;
+}
+
+button:disabled {
+	opacity: 0.5;
+	transition: all 0.3s;
+}
+
+button:disabled:hover {
+	cursor: auto;
+	color: white;
+	background-color: #fa225a;
 }
 
 /* Media Query */

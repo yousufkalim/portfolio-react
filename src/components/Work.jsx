@@ -10,7 +10,7 @@ import {
 	handleCircleOne,
 	handleCircleTwo,
 	handleCircleThree,
-} from "../actions";
+} from "../controllers/work";
 
 //Style
 import "../Style/Work.css";

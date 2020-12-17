@@ -14,7 +14,7 @@ Contact Form Section
 
 /* Container */
 .contact-me-container {
-	width: 62.2%;
+	width: 80.2%;
 	margin: auto;
 	display: flex;
 	justify-content: space-between;
@@ -76,7 +76,7 @@ Contact Details
 
 /* Container */
 .contact-details-container {
-	width: 60%;
+	width: 80%;
 	margin: auto;
 	display: flex;
 	justify-content: space-between;

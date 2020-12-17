@@ -64,6 +64,7 @@
 
 .contact-form form input {
 	height: 60px;
+	max-width: 579px;
 	border: none;
 	border-radius: 2px;
 	outline: none;

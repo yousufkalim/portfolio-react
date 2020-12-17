@@ -30,6 +30,7 @@ function BlogRoutes() {
 								image={article.image}
 								title={article.title}
 								blog={article.blog}
+								date={article.dateCreated}
 							/>
 						)}
 					/>
