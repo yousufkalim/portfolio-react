@@ -37,7 +37,7 @@
 	color: white;
 }
 
-.project-info span:first-child {
+.project-info h1 {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 600;
 	font-size: 48px;
@@ -54,8 +54,9 @@
 	color: #7a89ab;
 }
 
-.project-info div span {
+.project-info div h3 {
 	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
 	font-size: 24px;
 	line-height: 30px;
 	font-style: normal;

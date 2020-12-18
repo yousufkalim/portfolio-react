@@ -35,7 +35,7 @@ function PortfolioProject({
 				<div className="project-details">
 					<div className="project-details-container">
 						<div className="project-info">
-							<span>{heading}</span>
+							<h1>{heading}</h1>
 							<div>{ReactHTMLParser(description)}</div>
 						</div>
 						<div className="project-card">
