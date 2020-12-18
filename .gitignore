@@ -5,6 +5,7 @@
 /.idea
 /node_modules
 /.pnp
+/src/firebase.js
 .pnp.js
 ._.DS_Store
 
